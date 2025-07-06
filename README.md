@@ -40,7 +40,7 @@
 
 ## 🚀 Quick start
 
-```bash
+<code>bash
 # 1. Create environment
 conda create -n deepfake python=3.10
 conda activate deepfake
@@ -50,4 +50,15 @@ pip install -r requirements.txt
 python scripts/download_weights.py   # 60 MB
 
 # 3. Run inference on a folder of videos
-python infer.py --input samples/ --output results/
+python infer.py --input samples/ --output results/</code>
+
+<details> <summary>Requirements (click to expand)</summary>
+Python 3.10+
+
+PyTorch ≥ 1.13 with CUDA 11.7
+
+OpenCV, FFTW, tqdm
+
+(Optional) Weights & Biases for experiment tracking
+
+</details>
