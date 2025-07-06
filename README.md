@@ -25,8 +25,8 @@ TinyLlama-LoRA CLI Copilot is a **one-file command-line assistant**:
 1. Check current branch
 2. Create and switch to the new branch
 
-   <code>$ git branch
-           $ git checkout -b my-new-branch</code>
+   <code>$ git branch</code>
+   <code>$ git checkout -b my-new-branch</code>
 
 
 
