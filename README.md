@@ -21,8 +21,9 @@ A drop-in, copy-paste-ready README.md
 
 TinyLlama-LoRA CLI Copilot is a **one-file command-line assistant**:
 
-$ python src/agent.py "Create a new Git branch and switch to it"      ⟶     Check current branch
-                                                                             Create and switch to the new branch
+<code>$ python src/agent.py "Create a new Git branch and switch to it"   </code>
+⟶     Check current branch
+       Create and switch to the new branch
 
    <code>$ git branch
          $ git checkout -b my-new-branch</code>
