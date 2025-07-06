@@ -17,7 +17,7 @@ A drop-in, copy-paste-ready README.md
 
 ---
 
-## ✨ What is this?
+##  What is this?
 
 TinyLlama-LoRA CLI Copilot is a **one-file command-line assistant**:
 
@@ -47,7 +47,7 @@ evaluation.
 
 ---
 
-## 🚀 Quick-start
+## Quick-start
 <code>
 ```bash
 # clone + install
@@ -64,6 +64,22 @@ python src/agent.py "List .py files recursively (dry-run)"
 
 
 
+Repo layout
+
+.
+├── lora_adapter/           # 18 MB adapter weights
+├── logs/
+│   └── trace.jsonl         # timestamped agent runs
+├── offload/                # CPU offload shards (auto-created)
+├── src/
+│   ├── agent.py            # ✨ single-file copilot
+│   ├── train.py            # reproduce LoRA
+│   ├── evaluate_static.py  # ROUGE-L batch eval
+│   └── evaluate_dynamic.py # 0-1-2 rubric table builder
+├── eval_static.md          # static scores
+├── eval_dynamic.md         # last-7-runs dynamic table
+├── requirements.txt        # CUDA 11.8 wheels pre-pinned
+└── report.md               # project summary
 
 
 
