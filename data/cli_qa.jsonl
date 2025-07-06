@@ -1,0 +1,160 @@
+{"instruction": "How do I cargo locate-project?", "response": "cargo locate-project"}
+{"instruction": "How do I brew update?", "response": "brew update"}
+{"instruction": "How do I avo?", "response": "avo init"}
+{"instruction": "How do I az storage blob?", "response": "az storage blob download --account-name {{storage_account_name}} --account-key {{storage_account_key}} {{[-c|--container-name]}} {{container_name}} {{[-n|--name]}} {{path/to/blob}} {{[-f|--file]}} {{path/to/local_file}}"}
+{"instruction": "How do I cargo clippy?", "response": "cargo clippy"}
+{"instruction": "How do I badblocks?", "response": "sudo badblocks {{/dev/sdX}}"}
+{"instruction": "How do I brew list?", "response": "brew list"}
+{"instruction": "How do I cal?", "response": "cal"}
+{"instruction": "How do I Comma?", "response": ", {{command -with -flags}}"}
+{"instruction": "How do I autojump?", "response": "source /usr/share/autojump/autojump.{{bash|fish|zsh}}"}
+{"instruction": "How do I aireplay-ng?", "response": "sudo aireplay-ng --deauth {{count}} --bssid {{ap_mac}} --dmac {{client_mac}} {{interface}}"}
+{"instruction": "How do I bundletool?", "response": "bundletool help {{subcommand}}"}
+{"instruction": "How do I cargo report?", "response": "cargo report {{future-incompatibilities|...}}"}
+{"instruction": "How do I pm?", "response": "pm list packages"}
+{"instruction": "How do I adb pair?", "response": "tldr adb connect"}
+{"instruction": "How do I cargo uninstall?", "response": "cargo remove {{package_spec}}"}
+{"instruction": "How do I calibre-server?", "response": "calibre-server"}
+{"instruction": "How do I binwalk?", "response": "binwalk {{path/to/binary}}"}
+{"instruction": "How do I aws lambda?", "response": "aws lambda invoke --function-name {{name}} {{path/to/response.json}}"}
+{"instruction": "How do I 2to3?", "response": "2to3 {{path/to/file.py}}"}
+{"instruction": "How do I pkg?", "response": "pkg upgrade"}
+{"instruction": "How do I argos-translate?", "response": "argospm install translate-es_en"}
+{"instruction": "How do I Dollar sign?", "response": "echo ${{VARIABLE}}"}
+{"instruction": "How do I AdGuardHome?", "response": "AdGuardHome"}
+{"instruction": "How do I arch?", "response": "arch"}
+{"instruction": "How do I base32?", "response": "base32 {{path/to/file}}"}
+{"instruction": "How do I aws accessanalyzer?", "response": "aws accessanalyzer create-analyzer --analyzer-name {{analyzer_name}} --type {{type}} --tags {{tags}}"}
+{"instruction": "How do I ant?", "response": "ant"}
+{"instruction": "How do I anki?", "response": "anki"}
+{"instruction": "How do I carbonyl?", "response": "carbonyl"}
+{"instruction": "How do I arthas?", "response": "java -jar {{path/to/arthas-boot.jar}}"}
+{"instruction": "How do I az storage queue?", "response": "az storage queue create --account-name {{storage_account_name}} {{[-n|--name]}} {{queue_name}} --metadata {{queue_metadata}}"}
+{"instruction": "How do I 7za?", "response": "7za a {{path/to/archive.7z}} {{path/to/file_or_directory}}"}
+{"instruction": "How do I aws acm?", "response": "aws acm import-certificate --certificate-arn {{certificate_arn}} --certificate {{certificate}} --private-key {{private_key}} --certificate-chain {{certificate_chain}}"}
+{"instruction": "How do I astyle?", "response": "astyle {{source_file}}"}
+{"instruction": "How do I adb?", "response": "adb start-server"}
+{"instruction": "How do I autoconf?", "response": "autoconf"}
+{"instruction": "How do I buzzphrase?", "response": "buzzphrase"}
+{"instruction": "How do I bloodhound-python?", "response": "bloodhound-python --username {{username}} --password {{password}} --domain {{domain}}"}
+{"instruction": "How do I bdfr?", "response": "bdfr download {{path/to/output_directory}} {{[-l|--link]}} {{post_url}}"}
+{"instruction": "How do I cargo rustc?", "response": "cargo rustc -- {{rustc_options}}"}
+{"instruction": "How do I aws pricing?", "response": "aws pricing describe-services --region {{us-east-1}}"}
+{"instruction": "How do I arduino-builder?", "response": "arduino-builder -compile {{path/to/sketch.ino}}"}
+{"instruction": "How do I acme.sh --dns?", "response": "acme.sh --issue --dns {{gnd_gd}} --domain {{example.com}}"}
+{"instruction": "How do I az term?", "response": "az term show --product \"{{product_identifier}}\" --plan \"{{plan_identifier}}\" --publisher \"{{publisher_identifier}}\""}
+{"instruction": "How do I brew?", "response": "brew install {{formula}}"}
+{"instruction": "How do I apg?", "response": "apg"}
+{"instruction": "How do I adb install?", "response": "adb install {{path/to/file.apk}}"}
+{"instruction": "How do I cargo owner?", "response": "cargo owner --add {{username|github:org_name:team_name}} {{crate}}"}
+{"instruction": "How do I bacon?", "response": "bacon"}
+{"instruction": "How do I brushtopbm?", "response": "brushtopbm {{path/to/file.brush}}"}
+{"instruction": "How do I cargo fmt?", "response": "cargo fmt"}
+{"instruction": "How do I az appconfig?", "response": "az appconfig create {{[-n|--name]}} {{name}} {{[-g|--resource-group]}} {{group_name}} {{[-l|--location]}} {{location}}"}
+{"instruction": "How do I adb forward?", "response": "adb forward tcp:{{local_port}} tcp:{{remote_port}}"}
+{"instruction": "How do I aws iam?", "response": "aws iam list-users"}
+{"instruction": "How do I aws ses?", "response": "aws ses create-receipt-rule-set --rule-set-name {{rule_set_name}} --generate-cli-skeleton"}
+{"instruction": "How do I az feedback?", "response": "az feedback"}
+{"instruction": "How do I ar?", "response": "ar x {{path/to/file.a}}"}
+{"instruction": "How do I wm?", "response": "wm size"}
+{"instruction": "How do I aws backup?", "response": "aws backup get-backup-plan --backup-plan-id {{id}}"}
+{"instruction": "How do I cargo package?", "response": "cargo package"}
+{"instruction": "How do I blockout2?", "response": "blockout2"}
+{"instruction": "How do I aws?", "response": "aws configure wizard"}
+{"instruction": "How do I aws sns?", "response": "aws sns list-{{origination-numbers|phone-numbers-opted-out|platform-applications|sms-sandbox-phone-numbers|subscriptions|topics}}"}
+{"instruction": "How do I animdl?", "response": "animdl download {{anime_title}}"}
+{"instruction": "How do I [?", "response": "[ \"${{variable}}\" {{=|!=}} \"{{string}}\" ]"}
+{"instruction": "How do I bioradtopgm?", "response": "bioradtopgm -{{n}} {{path/to/file.pic}} > {{path/to/file.pgm}}"}
+{"instruction": "How do I browsh?", "response": "browsh"}
+{"instruction": "How do I builtin?", "response": "builtin {{command}}"}
+{"instruction": "How do I calligrawords?", "response": "calligrawords"}
+{"instruction": "How do I atrm?", "response": "atrm {{10}}"}
+{"instruction": "How do I az storage table?", "response": "az storage table create --account-name {{storage_account_name}} {{[-n|--name]}} {{table_name}} --fail-on-exist"}
+{"instruction": "How do I assimp?", "response": "assimp listext"}
+{"instruction": "How do I az pipelines?", "response": "az pipelines create {{[--org|--organization]}} {{organization_url}} {{[-p|--project]}} {{project_name}} --name {{pipeline_name}} --description {{description}} --repository {{repository_name}} --branch {{branch_name}}"}
+{"instruction": "How do I az vm?", "response": "az vm list --output table"}
+{"instruction": "How do I az redis?", "response": "az redis create --location {{location}} {{[-n|--name]}} {{name}} {{[-g|--resource-group]}} {{resource_group}} --sku {{Basic|Premium|Standard}} --vm-size {{c0|c1|c2|c3|c4|c5|c6|p1|p2|p3|p4|p5}}"}
+{"instruction": "How do I aws ce?", "response": "aws ce create-anomaly-monitor --monitor {{monitor_name}} --monitor-type {{monitor_type}}"}
+{"instruction": "How do I brew outdated?", "response": "brew outdated"}
+{"instruction": "How do I boxes?", "response": "echo \"{{string}}\" | boxes"}
+{"instruction": "How do I babeld?", "response": "babeld -c {{path/to/ports.conf}} -c {{path/to/filters.conf}} -c {{path/to/interfaces.conf}}"}
+{"instruction": "How do I aws configure?", "response": "aws configure"}
+{"instruction": "How do I cadaver?", "response": "cadaver {{http://dav.example.com/}}"}
+{"instruction": "How do I buku?", "response": "buku {{keyword}} {{[-t|--stag]}} {{privacy}}"}
+{"instruction": "How do I break?", "response": "while :; do break; done"}
+{"instruction": "How do I cargo tree?", "response": "cargo tree"}
+{"instruction": "How do I az devops?", "response": "az devops login {{[--org|--organization]}} {{organization_url}}"}
+{"instruction": "How do I apktool?", "response": "apktool d {{path/to/file.apk}}"}
+{"instruction": "How do I az logicapp?", "response": "az logicapp create {{[-n|--name]}} {{name}} {{[-g|--resource-group]}} {{resource_group}} {{[-s|--storage-account]}} {{storage_account}}"}
+{"instruction": "How do I aws s3 sync?", "response": "aws s3 sync {{path/to/file_or_directory}} s3://{{bucket_target_name}}/{{path/to/remote_location}}"}
+{"instruction": "How do I airpaste?", "response": "airpaste"}
+{"instruction": "How do I argocd app?", "response": "argocd app list --output {{json|yaml|wide}}"}
+{"instruction": "How do I az webapp?", "response": "az webapp list-runtimes {{[-os|--os-type]}} {{windows|linux}}"}
+{"instruction": "How do I az serial-console?", "response": "az serial-console connect {{[-g|--resource-group]}} {{Resource_Group_Name}} {{[-n|--name]}} {{Virtual_Machine_Name}}"}
+{"instruction": "How do I aws history?", "response": "aws history list"}
+{"instruction": "How do I atktopbm?", "response": "atktopbm {{path/to/image.atk}} > {{path/to/output.pbm}}"}
+{"instruction": "How do I calligrastage?", "response": "calligrastage"}
+{"instruction": "How do I autoflake?", "response": "autoflake --remove-unused-variables {{path/to/file.py}}"}
+{"instruction": "How do I apropos?", "response": "apropos {{regular_expression}}"}
+{"instruction": "How do I aws kinesis?", "response": "aws kinesis list-streams"}
+{"instruction": "How do I az advisor?", "response": "az advisor configuration list"}
+{"instruction": "How do I [[?", "response": "[[ ${{variable}} {{==|!=}} \"{{string}}\" ]]"}
+{"instruction": "How do I btop?", "response": "btop"}
+{"instruction": "How do I ani-cli?", "response": "ani-cli \"{{anime_name}}\""}
+{"instruction": "How do I bitcoind?", "response": "bitcoind"}
+{"instruction": "How do I banner?", "response": "banner \"{{Hello World}}\""}
+{"instruction": "How do I b2-tools?", "response": "b2 authorize_account {{key_id}}"}
+{"instruction": "How do I cargo login?", "response": "cargo login"}
+{"instruction": "How do I aws ecr?", "response": "aws ecr get-login-password --region {{region}} | {{docker login}} --username AWS --password-stdin {{aws_account_id}}.dkr.ecr.{{region}}.amazonaws.com"}
+{"instruction": "How do I bind?", "response": "bind {{-p|-P}}"}
+{"instruction": "How do I atoum?", "response": "atoum --init"}
+{"instruction": "How do I bzgrep?", "response": "bzgrep \"{{search_pattern}}\" {{path/to/file}}"}
+{"instruction": "How do I asdf?", "response": "asdf plugin list all"}
+{"instruction": "How do I brittany?", "response": "brittany {{path/to/file.hs}}"}
+{"instruction": "How do I box?", "response": "box compile"}
+{"instruction": "How do I archwiki-rs?", "response": "archwiki-rs read-page {{page_title}}"}
+{"instruction": "How do I alias?", "response": "alias"}
+{"instruction": "How do I bmaptool?", "response": "bmaptool create {{[-o|--output]}} {{blockmap.bmap}} {{source.img}}"}
+{"instruction": "How do I cargo pkgid?", "response": "cargo pkgid"}
+{"instruction": "How do I 7zr?", "response": "7zr a {{path/to/archive.7z}} {{path/to/file_or_directory}}"}
+{"instruction": "How do I bzegrep?", "response": "bzegrep \"{{search_pattern}}\" {{path/to/file}}"}
+{"instruction": "How do I amass?", "response": "amass {{intel|enum}} {{options}}"}
+{"instruction": "How do I input?", "response": "input keyevent {{event_code}}"}
+{"instruction": "How do I az logout?", "response": "az logout"}
+{"instruction": "How do I awslogs?", "response": "awslogs groups"}
+{"instruction": "How do I bazel?", "response": "bazel build {{target}}"}
+{"instruction": "How do I bugreportz?", "response": "bugreportz"}
+{"instruction": "How do I az quantum?", "response": "az quantum workspace create {{[-g|--resource-group]}} {{ResourceGroup}} {{[-l|--location]}} {{Location}} {{[-w|--workspace-name]}} {{Workspace}} {{[-a|--storage-account]}} {{MyStorageAccountName}}"}
+{"instruction": "How do I astronomer?", "response": "astronomer {{tldr-pages/tldr-node-client}}"}
+{"instruction": "How do I bundler?", "response": "tldr bundle"}
+{"instruction": "How do I cargo fix?", "response": "cargo fix --broken-code"}
+{"instruction": "How do I aws sts?", "response": "aws sts assume-role --role-arn {{aws_role_arn}}"}
+{"instruction": "How do I auditd?", "response": "auditd"}
+{"instruction": "How do I az version?", "response": "az version"}
+{"instruction": "How do I az provider?", "response": "az provider register {{[-n|--namespace]}} {{Microsoft.PolicyInsights}}"}
+{"instruction": "How do I az group?", "response": "az group create {{[-n|--name]}} {{name}} {{[-l|--location]}} {{location}}"}
+{"instruction": "How do I cargo test?", "response": "cargo {{[t|test]}} {{test_name}}"}
+{"instruction": "How do I amass intel?", "response": "amass intel -addr {{192.168.0.1-254}}"}
+{"instruction": "How do I aws s3 cp?", "response": "aws s3 cp {{path/to/file}} s3://{{bucket_name}}/{{path/to/remote_file}}"}
+{"instruction": "How do I aircrack-ng?", "response": "aircrack-ng -w {{path/to/wordlist.txt}} {{path/to/capture.cap}}"}
+{"instruction": "How do I dalvikvm?", "response": "dalvikvm -classpath {{path/to/file.jar}} {{classname}}"}
+{"instruction": "How do I bitcoin-cli?", "response": "bitcoin-cli sendtoaddress \"{{address}}\" {{amount}}"}
+{"instruction": "How do I Dot?", "response": "tldr source"}
+{"instruction": "How do I bfs?", "response": "bfs {{root_path}} -name '{{*.ext}}'"}
+{"instruction": "How do I blackfire?", "response": "blackfire config"}
+{"instruction": "How do I az acr?", "response": "az acr create {{[-n|--name]}} {{registry_name}} {{[-g|--resource-group]}} {{resource_group}} --sku {{sku}}"}
+{"instruction": "How do I cargo publish?", "response": "cargo publish"}
+{"instruction": "How do I argon2?", "response": "echo \"{{password}}\" | argon2 \"{{salt_text}}\""}
+{"instruction": "How do I brew search?", "response": "brew search {{keyword}}"}
+{"instruction": "How do I am?", "response": "am start -n {{com.android.settings/.Settings}}"}
+{"instruction": "How do I cargo clean?", "response": "cargo clean"}
+{"instruction": "How do I antibody?", "response": "antibody bundle < {{~/.zsh_plugins.txt}} > {{~/.zsh_plugins.sh}}"}
+{"instruction": "How do I ansible-doc?", "response": "ansible-doc {{[-l|--list]}}"}
+{"instruction": "How do I apkleaks?", "response": "apkleaks {{[-f|--file]}} {{path/to/file.apk}}"}
+{"instruction": "How do I boot?", "response": "boot repl"}
+{"instruction": "How do I apkeep?", "response": "apkeep --app {{com.example.application}} {{path/to/directory}}"}
+{"instruction": "How do I azurite?", "response": "azurite {{[-l|--location]}} {{path/to/directory}}"}
+{"instruction": "How do I blahaj?", "response": "blahaj --flags"}
+{"instruction": "How do I az upgrade?", "response": "az upgrade"}
+{"instruction": "How do I aws s3 rm?", "response": "aws s3 rm s3://{{bucket_name}}/{{path/to/file}}"}
+{"instruction": "How do I az storage account?", "response": "az storage account create {{[-n|--name]}} {{storage_account_name}} {{[-g|--resource-group]}} {{azure_resource_group}} --location {{azure_location}} --sku {{storage_account_sku}}"}

@@ -1,0 +1,18 @@
+# ─── Core ────────────────────────────────────────────────────────────────
+transformers>=4.39,<4.42
+peft>=0.10,<0.11
+accelerate>=0.30.1
+
+# ─── PyTorch 2.3 CUDA-11.8 wheels (comment out if already present) ───────
+torch==2.3.0+cu118
+torchvision==0.18.0+cu118
+torchaudio==2.3.0+cu118
+--extra-index-url https://download.pytorch.org/whl/cu118
+
+# ─── Helpers ─────────────────────────────────────────────────────────────
+rouge-score
+datasets>=2.19,<2.20
+
+# ─── Drive / GCS (optional, silences warning) ────────────────────────────
+fsspec==2024.3.1      
+gcsfs==2024.3.1         

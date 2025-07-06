@@ -1,0 +1,8 @@
+# large or regenerable
+lora_adapter/*.safetensors
+outputs/
+hf_cache/
+logs/
+__pycache__/
+*.ipynb_checkpoints
+*.mp4
