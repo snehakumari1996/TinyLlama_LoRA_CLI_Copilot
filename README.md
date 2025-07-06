@@ -45,33 +45,33 @@ evaluation.
 | **Zero-to-run** | `pip install -r requirements.txt` · `python src/agent.py "…"` |
 
 ---
-
-## Quick-start
-<code>
+# Quick-start
 ```bash
 # clone + install
 git clone https://github.com/snehakumari1996/TinyLlama_LoRA_CLI_Copilot.git
 cd TinyLlama_LoRA_CLI_Copilot
 pip install -r requirements.txt          # CUDA 11.8 wheels pinned
-
-# (optional) reproduce the adapter – ~5 min on Colab T4
+```
+(optional) reproduce the adapter – ~5 min on Colab T4
+```bash
 python src/train.py
-
+```
 # run a demo
+```bash
 python src/agent.py "List .py files recursively (dry-run)"
-</code>
+```
 
 
 
 Repo layout
-graphql
+```
 .
 ├── lora_adapter/           # 18 MB adapter weights
 ├── logs/
 │   └── trace.jsonl         # timestamped agent runs
 ├── offload/                # CPU offload shards (auto-created)
 ├── src/
-│   ├── agent.py            # ✨ single-file copilot
+│   ├── agent.py            # single-file copilot
 │   ├── train.py            # reproduce LoRA
 │   ├── evaluate_static.py  # ROUGE-L batch eval
 │   └── evaluate_dynamic.py # 0-1-2 rubric table builder
@@ -79,7 +79,7 @@ graphql
 ├── eval_dynamic.md         # last-7-runs dynamic table
 ├── requirements.txt        # CUDA 11.8 wheels pre-pinned
 └── report.md               # project summary
-
+```
 
 
 
