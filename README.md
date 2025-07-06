@@ -12,7 +12,6 @@ A drop-in, copy-paste-ready README.md
   <a href="https://github.com/snehakumari1996/TinyLlama_LoRA_CLI_Copilot/stargazers"><img alt="Stars" src="https://img.shields.io/github/stars/snehakumari1996/TinyLlama_LoRA_CLI_Copilot"></a>
   <a href="https://github.com/snehakumari1996/TinyLlama_LoRA_CLI_Copilot/blob/main/LICENSE"><img alt="License" src="https://img.shields.io/github/license/snehakumari1996/TinyLlama_LoRA_CLI_Copilot"></a>
   <img alt="Python" src="https://img.shields.io/badge/python-3.10+-blue">
-  <img alt="HF Spaces" src="https://img.shields.io/badge/model-TinyLlama-1.1B-Chat-blueviolet">
 </p>
 
 ---
@@ -67,19 +66,18 @@ python src/agent.py "List .py files recursively (dry-run)"
 Repo layout
 
 .
-├── lora_adapter/           # 18 MB adapter weights
+├── lora_adapter/          
 ├── logs/
-│   └── trace.jsonl         # timestamped agent runs
-├── offload/                # CPU offload shards (auto-created)
+│   └── trace.jsonl       
+├── offload/               
 ├── src/
-│   ├── agent.py            # ✨ single-file copilot
-│   ├── train.py            # reproduce LoRA
-│   ├── evaluate_static.py  # ROUGE-L batch eval
-│   └── evaluate_dynamic.py # 0-1-2 rubric table builder
-├── eval_static.md          # static scores
-├── eval_dynamic.md         # last-7-runs dynamic table
-├── requirements.txt        # CUDA 11.8 wheels pre-pinned
-└── report.md               # project summary
+│   ├── agent.py            
+│   ├── evaluate_static.py  
+│   └── evaluate_dynamic.py 
+├── eval_static.md         
+├── eval_dynamic.md         
+├── requirements.txt        
+└── report.md               
 
 
 
