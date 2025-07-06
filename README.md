@@ -64,20 +64,21 @@ python src/agent.py "List .py files recursively (dry-run)"
 
 
 Repo layout
-
+graphql
 .
-├── lora_adapter/          
+├── lora_adapter/           # 18 MB adapter weights
 ├── logs/
-│   └── trace.jsonl       
-├── offload/               
+│   └── trace.jsonl         # timestamped agent runs
+├── offload/                # CPU offload shards (auto-created)
 ├── src/
-│   ├── agent.py            
-│   ├── evaluate_static.py  
-│   └── evaluate_dynamic.py 
-├── eval_static.md         
-├── eval_dynamic.md         
-├── requirements.txt        
-└── report.md               
+│   ├── agent.py            # ✨ single-file copilot
+│   ├── train.py            # reproduce LoRA
+│   ├── evaluate_static.py  # ROUGE-L batch eval
+│   └── evaluate_dynamic.py # 0-1-2 rubric table builder
+├── eval_static.md          # static scores
+├── eval_dynamic.md         # last-7-runs dynamic table
+├── requirements.txt        # CUDA 11.8 wheels pre-pinned
+└── report.md               # project summary
 
 
 
