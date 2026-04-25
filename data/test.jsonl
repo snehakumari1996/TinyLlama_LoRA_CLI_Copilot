@@ -1,0 +1,197 @@
+{"instruction": "How do I ac?", "response": "ac", "source": "https://raw.githubusercontent.com/tldr-pages/tldr/main/pages/common/ac.md", "license": "MIT"}
+{"instruction": "How do I jj abandon?", "response": "jj abandon {{revsets}}", "source": "https://raw.githubusercontent.com/tldr-pages/tldr/main/pages/common/jj-abandon.md", "license": "MIT"}
+{"instruction": "How do I docker container update?", "response": "docker {{[update|container update]}} --restart {{always|no|on-failure|unless-stopped}} {{container_name}}", "source": "https://raw.githubusercontent.com/tldr-pages/tldr/main/pages/common/docker-container-update.md", "license": "MIT"}
+{"instruction": "How do I ant?", "response": "ant", "source": "https://raw.githubusercontent.com/tldr-pages/tldr/main/pages/common/ant.md", "license": "MIT"}
+{"instruction": "How do I gimp?", "response": "gimp", "source": "https://raw.githubusercontent.com/tldr-pages/tldr/main/pages/common/gimp.md", "license": "MIT"}
+{"instruction": "How do I gnuplot?", "response": "gnuplot", "source": "https://raw.githubusercontent.com/tldr-pages/tldr/main/pages/common/gnuplot.md", "license": "MIT"}
+{"instruction": "How do I colorls?", "response": "colorls -1", "source": "https://raw.githubusercontent.com/tldr-pages/tldr/main/pages/common/colorls.md", "license": "MIT"}
+{"instruction": "How do I afconvert?", "response": "afconvert -a {{extension}} {{path/to/input_file}} {{path/to/output_file1 path/to/output_file2 ...}}", "source": "https://raw.githubusercontent.com/tldr-pages/tldr/main/pages/common/afconvert.md", "license": "MIT"}
+{"instruction": "How do I erl?", "response": "erlc {{path/to/file1 path/to/file2 ...}} && erl -noshell '{{mymodule:myfunction(arguments)}}, init:stop().'", "source": "https://raw.githubusercontent.com/tldr-pages/tldr/main/pages/common/erl.md", "license": "MIT"}
+{"instruction": "How do I gh run?", "response": "gh run view", "source": "https://raw.githubusercontent.com/tldr-pages/tldr/main/pages/common/gh-run.md", "license": "MIT"}
+{"instruction": "How do I gcrane help?", "response": "gcrane help {{command}}", "source": "https://raw.githubusercontent.com/tldr-pages/tldr/main/pages/common/gcrane-help.md", "license": "MIT"}
+{"instruction": "How do I getopts?", "response": "getopts {{x}} {{opt}}; echo ${{opt}}", "source": "https://raw.githubusercontent.com/tldr-pages/tldr/main/pages/common/getopts.md", "license": "MIT"}
+{"instruction": "How do I hunspell?", "response": "hunspell {{path/to/file}}", "source": "https://raw.githubusercontent.com/tldr-pages/tldr/main/pages/common/hunspell.md", "license": "MIT"}
+{"instruction": "How do I ges-launch-1.0?", "response": "ges-launch-1.0 +clip {{path/to/file1}} +clip {{path/to/file2}}", "source": "https://raw.githubusercontent.com/tldr-pages/tldr/main/pages/common/ges-launch-1.0.md", "license": "MIT"}
+{"instruction": "How do I ccache?", "response": "ccache {{[-s|--show-stats]}}", "source": "https://raw.githubusercontent.com/tldr-pages/tldr/main/pages/common/ccache.md", "license": "MIT"}
+{"instruction": "How do I cargo fetch?", "response": "cargo fetch", "source": "https://raw.githubusercontent.com/tldr-pages/tldr/main/pages/common/cargo-fetch.md", "license": "MIT"}
+{"instruction": "How do I gh accessibility?", "response": "gh {{[a11y|accessibility]}} {{[-w|--web]}}", "source": "https://raw.githubusercontent.com/tldr-pages/tldr/main/pages/common/gh-accessibility.md", "license": "MIT"}
+{"instruction": "How do I dua?", "response": "dua {{path/to/directory}}", "source": "https://raw.githubusercontent.com/tldr-pages/tldr/main/pages/common/dua.md", "license": "MIT"}
+{"instruction": "How do I crane delete?", "response": "crane delete {{image_name}}", "source": "https://raw.githubusercontent.com/tldr-pages/tldr/main/pages/common/crane-delete.md", "license": "MIT"}
+{"instruction": "How do I bun why?", "response": "bun why {{package_name}}", "source": "https://raw.githubusercontent.com/tldr-pages/tldr/main/pages/common/bun-why.md", "license": "MIT"}
+{"instruction": "How do I chronyc?", "response": "chronyc", "source": "https://raw.githubusercontent.com/tldr-pages/tldr/main/pages/common/chronyc.md", "license": "MIT"}
+{"instruction": "How do I hledger balance?", "response": "hledger {{[bal|balance]}}", "source": "https://raw.githubusercontent.com/tldr-pages/tldr/main/pages/common/hledger-balance.md", "license": "MIT"}
+{"instruction": "How do I adb pair?", "response": "tldr adb connect", "source": "https://raw.githubusercontent.com/tldr-pages/tldr/main/pages/common/adb-pair.md", "license": "MIT"}
+{"instruction": "How do I docsify?", "response": "docsify init", "source": "https://raw.githubusercontent.com/tldr-pages/tldr/main/pages/common/docsify.md", "license": "MIT"}
+{"instruction": "How do I androguard?", "response": "androguard axml {{path/to/app}}.apk", "source": "https://raw.githubusercontent.com/tldr-pages/tldr/main/pages/common/androguard.md", "license": "MIT"}
+{"instruction": "How do I conda info?", "response": "conda info {{[-a|--all]}}", "source": "https://raw.githubusercontent.com/tldr-pages/tldr/main/pages/common/conda-info.md", "license": "MIT"}
+{"instruction": "How do I geth?", "response": "geth", "source": "https://raw.githubusercontent.com/tldr-pages/tldr/main/pages/common/geth.md", "license": "MIT"}
+{"instruction": "How do I dcgmi?", "response": "dcgmi discovery {{[-l|--list]}}", "source": "https://raw.githubusercontent.com/tldr-pages/tldr/main/pages/common/dcgmi.md", "license": "MIT"}
+{"instruction": "How do I conda search?", "response": "conda search {{package_name}}", "source": "https://raw.githubusercontent.com/tldr-pages/tldr/main/pages/common/conda-search.md", "license": "MIT"}
+{"instruction": "How do I git reset?", "response": "git reset", "source": "https://raw.githubusercontent.com/tldr-pages/tldr/main/pages/common/git-reset.md", "license": "MIT"}
+{"instruction": "How do I frpc?", "response": "frpc", "source": "https://raw.githubusercontent.com/tldr-pages/tldr/main/pages/common/frpc.md", "license": "MIT"}
+{"instruction": "How do I jj config path?", "response": "jj config {{[p|path]}} --user", "source": "https://raw.githubusercontent.com/tldr-pages/tldr/main/pages/common/jj-config-path.md", "license": "MIT"}
+{"instruction": "How do I carbon-now?", "response": "carbon-now {{path/to/file}}", "source": "https://raw.githubusercontent.com/tldr-pages/tldr/main/pages/common/carbon-now.md", "license": "MIT"}
+{"instruction": "How do I cargo fmt?", "response": "cargo fmt", "source": "https://raw.githubusercontent.com/tldr-pages/tldr/main/pages/common/cargo-fmt.md", "license": "MIT"}
+{"instruction": "How do I electrum?", "response": "electrum {{[-w|--wallet]}} {{path/to/new_wallet.dat}} create", "source": "https://raw.githubusercontent.com/tldr-pages/tldr/main/pages/common/electrum.md", "license": "MIT"}
+{"instruction": "How do I pm?", "response": "pm list packages", "source": "https://raw.githubusercontent.com/tldr-pages/tldr/main/pages/android/pm.md", "license": "MIT"}
+{"instruction": "How do I hg commit?", "response": "hg commit", "source": "https://raw.githubusercontent.com/tldr-pages/tldr/main/pages/common/hg-commit.md", "license": "MIT"}
+{"instruction": "How do I az aks?", "response": "az aks list {{[-g|--resource-group]}} {{resource_group}}", "source": "https://raw.githubusercontent.com/tldr-pages/tldr/main/pages/common/az-aks.md", "license": "MIT"}
+{"instruction": "How do I cdk?", "response": "cdk ls", "source": "https://raw.githubusercontent.com/tldr-pages/tldr/main/pages/common/cdk.md", "license": "MIT"}
+{"instruction": "How do I go fix?", "response": "go fix {{packages}}", "source": "https://raw.githubusercontent.com/tldr-pages/tldr/main/pages/common/go-fix.md", "license": "MIT"}
+{"instruction": "How do I emacsclient?", "response": "emacsclient {{path/to/file}}", "source": "https://raw.githubusercontent.com/tldr-pages/tldr/main/pages/common/emacsclient.md", "license": "MIT"}
+{"instruction": "How do I docker load?", "response": "tldr docker image load", "source": "https://raw.githubusercontent.com/tldr-pages/tldr/main/pages/common/docker-load.md", "license": "MIT"}
+{"instruction": "How do I ffplay?", "response": "ffplay {{path/to/file}}", "source": "https://raw.githubusercontent.com/tldr-pages/tldr/main/pages/common/ffplay.md", "license": "MIT"}
+{"instruction": "How do I docker container start?", "response": "docker {{[start|container start]}} {{container}}", "source": "https://raw.githubusercontent.com/tldr-pages/tldr/main/pages/common/docker-container-start.md", "license": "MIT"}
+{"instruction": "How do I dvc dag?", "response": "dvc dag", "source": "https://raw.githubusercontent.com/tldr-pages/tldr/main/pages/common/dvc-dag.md", "license": "MIT"}
+{"instruction": "How do I bun pm pkg?", "response": "bun pm pkg get", "source": "https://raw.githubusercontent.com/tldr-pages/tldr/main/pages/common/bun-pm-pkg.md", "license": "MIT"}
+{"instruction": "How do I az tag?", "response": "az tag add-value {{[-n|--name]}} {{tag_name}} --value {{tag_value}}", "source": "https://raw.githubusercontent.com/tldr-pages/tldr/main/pages/common/az-tag.md", "license": "MIT"}
+{"instruction": "How do I dvc config?", "response": "dvc config core.remote", "source": "https://raw.githubusercontent.com/tldr-pages/tldr/main/pages/common/dvc-config.md", "license": "MIT"}
+{"instruction": "How do I git submodule?", "response": "git submodule", "source": "https://raw.githubusercontent.com/tldr-pages/tldr/main/pages/common/git-submodule.md", "license": "MIT"}
+{"instruction": "How do I https?", "response": "tldr http", "source": "https://raw.githubusercontent.com/tldr-pages/tldr/main/pages/common/https.md", "license": "MIT"}
+{"instruction": "How do I expand?", "response": "expand {{path/to/file}}", "source": "https://raw.githubusercontent.com/tldr-pages/tldr/main/pages/common/expand.md", "license": "MIT"}
+{"instruction": "How do I hugo?", "response": "hugo new site {{path/to/site}}", "source": "https://raw.githubusercontent.com/tldr-pages/tldr/main/pages/common/hugo.md", "license": "MIT"}
+{"instruction": "How do I hledger import?", "response": "hledger import {{path/to/bank.csv}}", "source": "https://raw.githubusercontent.com/tldr-pages/tldr/main/pages/common/hledger-import.md", "license": "MIT"}
+{"instruction": "How do I gcc?", "response": "gcc {{path/to/source1.c path/to/source2.c ...}} {{[-o|--output]}} {{path/to/output_executable}}", "source": "https://raw.githubusercontent.com/tldr-pages/tldr/main/pages/common/gcc.md", "license": "MIT"}
+{"instruction": "How do I codecrafters?", "response": "codecrafters test", "source": "https://raw.githubusercontent.com/tldr-pages/tldr/main/pages/common/codecrafters.md", "license": "MIT"}
+{"instruction": "How do I atuin?", "response": "eval \"$(atuin init {{bash|zsh|fish}})\"", "source": "https://raw.githubusercontent.com/tldr-pages/tldr/main/pages/common/atuin.md", "license": "MIT"}
+{"instruction": "How do I gacutil?", "response": "gacutil -i {{path/to/assembly.dll}}", "source": "https://raw.githubusercontent.com/tldr-pages/tldr/main/pages/common/gacutil.md", "license": "MIT"}
+{"instruction": "How do I bru?", "response": "bru run", "source": "https://raw.githubusercontent.com/tldr-pages/tldr/main/pages/common/bru.md", "license": "MIT"}
+{"instruction": "How do I jhsdb?", "response": "jhsdb jstack --pid {{pid}}", "source": "https://raw.githubusercontent.com/tldr-pages/tldr/main/pages/common/jhsdb.md", "license": "MIT"}
+{"instruction": "How do I docker save?", "response": "tldr docker image save", "source": "https://raw.githubusercontent.com/tldr-pages/tldr/main/pages/common/docker-save.md", "license": "MIT"}
+{"instruction": "How do I birdc?", "response": "birdc", "source": "https://raw.githubusercontent.com/tldr-pages/tldr/main/pages/common/birdc.md", "license": "MIT"}
+{"instruction": "How do I ast-grep?", "response": "ast-grep run {{[-p|--pattern]}} '{{pattern}}' {{path/to/file}}", "source": "https://raw.githubusercontent.com/tldr-pages/tldr/main/pages/common/ast-grep.md", "license": "MIT"}
+{"instruction": "How do I eqn?", "response": "eqn {{path/to/input.eqn}} > {{path/to/output.roff}}", "source": "https://raw.githubusercontent.com/tldr-pages/tldr/main/pages/common/eqn.md", "license": "MIT"}
+{"instruction": "How do I gh pr comment?", "response": "gh pr comment {{[-b|--body]}} \"{{LGTM}}\"", "source": "https://raw.githubusercontent.com/tldr-pages/tldr/main/pages/common/gh-pr-comment.md", "license": "MIT"}
+{"instruction": "How do I archwiki-rs?", "response": "archwiki-rs read-page {{page_title}}", "source": "https://raw.githubusercontent.com/tldr-pages/tldr/main/pages/common/archwiki-rs.md", "license": "MIT"}
+{"instruction": "How do I diskonaut?", "response": "diskonaut", "source": "https://raw.githubusercontent.com/tldr-pages/tldr/main/pages/common/diskonaut.md", "license": "MIT"}
+{"instruction": "How do I alr?", "response": "alr init {{--bin|--lib}} {{project_name}}", "source": "https://raw.githubusercontent.com/tldr-pages/tldr/main/pages/common/alr.md", "license": "MIT"}
+{"instruction": "How do I du?", "response": "du -{{b|k|m}} {{path/to/directory}}", "source": "https://raw.githubusercontent.com/tldr-pages/tldr/main/pages/common/du.md", "license": "MIT"}
+{"instruction": "How do I adb forward?", "response": "adb forward tcp:{{local_port}} tcp:{{remote_port}}", "source": "https://raw.githubusercontent.com/tldr-pages/tldr/main/pages/common/adb-forward.md", "license": "MIT"}
+{"instruction": "How do I clock?", "response": "clock set {{23}}:{{59}}:{{59}} {{31}} {{april}} {{2000}}", "source": "https://raw.githubusercontent.com/tldr-pages/tldr/main/pages/cisco-ios/clock.md", "license": "MIT"}
+{"instruction": "How do I elm?", "response": "elm init", "source": "https://raw.githubusercontent.com/tldr-pages/tldr/main/pages/common/elm.md", "license": "MIT"}
+{"instruction": "How do I brew services?", "response": "brew services", "source": "https://raw.githubusercontent.com/tldr-pages/tldr/main/pages/common/brew-services.md", "license": "MIT"}
+{"instruction": "How do I c99?", "response": "c99 {{file.c}}", "source": "https://raw.githubusercontent.com/tldr-pages/tldr/main/pages/common/c99.md", "license": "MIT"}
+{"instruction": "How do I etcdctl?", "response": "etcdctl get {{my/key}}", "source": "https://raw.githubusercontent.com/tldr-pages/tldr/main/pages/common/etcdctl.md", "license": "MIT"}
+{"instruction": "How do I impacket-mssqlclient?", "response": "tldr mssqlclient.py", "source": "https://raw.githubusercontent.com/tldr-pages/tldr/main/pages/common/impacket-mssqlclient.md", "license": "MIT"}
+{"instruction": "How do I bun pm migrate?", "response": "bun pm migrate", "source": "https://raw.githubusercontent.com/tldr-pages/tldr/main/pages/common/bun-pm-migrate.md", "license": "MIT"}
+{"instruction": "How do I act?", "response": "act {{[-l|--list]}}", "source": "https://raw.githubusercontent.com/tldr-pages/tldr/main/pages/common/act.md", "license": "MIT"}
+{"instruction": "How do I git merge-base?", "response": "git merge-base {{commit_1}} {{commit_2}}", "source": "https://raw.githubusercontent.com/tldr-pages/tldr/main/pages/common/git-merge-base.md", "license": "MIT"}
+{"instruction": "How do I doctl apps?", "response": "doctl {{[a|apps]}} {{[c|create]}}", "source": "https://raw.githubusercontent.com/tldr-pages/tldr/main/pages/common/doctl-apps.md", "license": "MIT"}
+{"instruction": "How do I csv2tsv?", "response": "csv2tsv {{path/to/input_csv1 path/to/input_csv2 ...}} > {{path/to/output_tsv}}", "source": "https://raw.githubusercontent.com/tldr-pages/tldr/main/pages/common/csv2tsv.md", "license": "MIT"}
+{"instruction": "How do I fuck?", "response": "eval \"$(thefuck --alias)\"", "source": "https://raw.githubusercontent.com/tldr-pages/tldr/main/pages/common/fuck.md", "license": "MIT"}
+{"instruction": "How do I ical?", "response": "ical", "source": "https://raw.githubusercontent.com/tldr-pages/tldr/main/pages/common/ical.md", "license": "MIT"}
+{"instruction": "How do I dolt commit?", "response": "dolt commit", "source": "https://raw.githubusercontent.com/tldr-pages/tldr/main/pages/common/dolt-commit.md", "license": "MIT"}
+{"instruction": "How do I docker stats?", "response": "tldr docker container stats", "source": "https://raw.githubusercontent.com/tldr-pages/tldr/main/pages/common/docker-stats.md", "license": "MIT"}
+{"instruction": "How do I hledger print?", "response": "hledger print", "source": "https://raw.githubusercontent.com/tldr-pages/tldr/main/pages/common/hledger-print.md", "license": "MIT"}
+{"instruction": "How do I calligrasheets?", "response": "calligrasheets", "source": "https://raw.githubusercontent.com/tldr-pages/tldr/main/pages/common/calligrasheets.md", "license": "MIT"}
+{"instruction": "How do I cronic?", "response": "cronic {{command}}", "source": "https://raw.githubusercontent.com/tldr-pages/tldr/main/pages/common/cronic.md", "license": "MIT"}
+{"instruction": "How do I gcloud components?", "response": "gcloud components list", "source": "https://raw.githubusercontent.com/tldr-pages/tldr/main/pages/common/gcloud-components.md", "license": "MIT"}
+{"instruction": "How do I jigsaw?", "response": "jigsaw init", "source": "https://raw.githubusercontent.com/tldr-pages/tldr/main/pages/common/jigsaw.md", "license": "MIT"}
+{"instruction": "How do I caddy?", "response": "caddy run", "source": "https://raw.githubusercontent.com/tldr-pages/tldr/main/pages/common/caddy.md", "license": "MIT"}
+{"instruction": "How do I arch?", "response": "tldr uname", "source": "https://raw.githubusercontent.com/tldr-pages/tldr/main/pages/common/arch.md", "license": "MIT"}
+{"instruction": "How do I git restore?", "response": "git restore {{path/to/file}}", "source": "https://raw.githubusercontent.com/tldr-pages/tldr/main/pages/common/git-restore.md", "license": "MIT"}
+{"instruction": "How do I go fmt?", "response": "go fmt", "source": "https://raw.githubusercontent.com/tldr-pages/tldr/main/pages/common/go-fmt.md", "license": "MIT"}
+{"instruction": "How do I huggingface-cli?", "response": "tldr hf", "source": "https://raw.githubusercontent.com/tldr-pages/tldr/main/pages/common/huggingface-cli.md", "license": "MIT"}
+{"instruction": "How do I abduco?", "response": "abduco", "source": "https://raw.githubusercontent.com/tldr-pages/tldr/main/pages/common/abduco.md", "license": "MIT"}
+{"instruction": "How do I dash?", "response": "dash", "source": "https://raw.githubusercontent.com/tldr-pages/tldr/main/pages/common/dash.md", "license": "MIT"}
+{"instruction": "How do I git clean?", "response": "git clean {{[-i|--interactive]}}", "source": "https://raw.githubusercontent.com/tldr-pages/tldr/main/pages/common/git-clean.md", "license": "MIT"}
+{"instruction": "How do I cupsaccept?", "response": "cupsaccept {{destination1 destination2 ...}}", "source": "https://raw.githubusercontent.com/tldr-pages/tldr/main/pages/common/cupsaccept.md", "license": "MIT"}
+{"instruction": "How do I bcomps?", "response": "bcomps {{path/to/input1.gv path/to/input2.gv ...}} > {{path/to/output.gv}}", "source": "https://raw.githubusercontent.com/tldr-pages/tldr/main/pages/common/bcomps.md", "license": "MIT"}
+{"instruction": "How do I box?", "response": "box compile", "source": "https://raw.githubusercontent.com/tldr-pages/tldr/main/pages/common/box.md", "license": "MIT"}
+{"instruction": "How do I gh project?", "response": "gh project {{[ls|list]}}", "source": "https://raw.githubusercontent.com/tldr-pages/tldr/main/pages/common/gh-project.md", "license": "MIT"}
+{"instruction": "How do I consul?", "response": "consul --help", "source": "https://raw.githubusercontent.com/tldr-pages/tldr/main/pages/common/consul.md", "license": "MIT"}
+{"instruction": "How do I docker-machine?", "response": "docker-machine ls", "source": "https://raw.githubusercontent.com/tldr-pages/tldr/main/pages/common/docker-machine.md", "license": "MIT"}
+{"instruction": "How do I docker pull?", "response": "tldr docker image pull", "source": "https://raw.githubusercontent.com/tldr-pages/tldr/main/pages/common/docker-pull.md", "license": "MIT"}
+{"instruction": "How do I aws batch?", "response": "aws batch list-jobs --job-queue {{queue_name}}", "source": "https://raw.githubusercontent.com/tldr-pages/tldr/main/pages/common/aws-batch.md", "license": "MIT"}
+{"instruction": "How do I bgpgrep?", "response": "bgpgrep {{master6.mrt}}", "source": "https://raw.githubusercontent.com/tldr-pages/tldr/main/pages/common/bgpgrep.md", "license": "MIT"}
+{"instruction": "How do I aws eks?", "response": "aws eks create-cluster --name {{cluster_name}} --role-arn {{eks_service_role_arn}} --resources-vpc-config subnetIds={{subnet_ids}},securityGroupIds={{security_group_ids}}", "source": "https://raw.githubusercontent.com/tldr-pages/tldr/main/pages/common/aws-eks.md", "license": "MIT"}
+{"instruction": "How do I hg?", "response": "hg init", "source": "https://raw.githubusercontent.com/tldr-pages/tldr/main/pages/common/hg.md", "license": "MIT"}
+{"instruction": "How do I gitlab-runner?", "response": "sudo gitlab-runner register --url {{https://gitlab.example.com}} --registration-token {{token}} --name {{name}}", "source": "https://raw.githubusercontent.com/tldr-pages/tldr/main/pages/common/gitlab-runner.md", "license": "MIT"}
+{"instruction": "How do I eslint?", "response": "eslint --init", "source": "https://raw.githubusercontent.com/tldr-pages/tldr/main/pages/common/eslint.md", "license": "MIT"}
+{"instruction": "How do I hg add?", "response": "hg add {{path/to/file}}", "source": "https://raw.githubusercontent.com/tldr-pages/tldr/main/pages/common/hg-add.md", "license": "MIT"}
+{"instruction": "How do I i3?", "response": "i3", "source": "https://raw.githubusercontent.com/tldr-pages/tldr/main/pages/common/i3.md", "license": "MIT"}
+{"instruction": "How do I docker container ls?", "response": "docker {{[ps|container ls]}}", "source": "https://raw.githubusercontent.com/tldr-pages/tldr/main/pages/common/docker-container-ls.md", "license": "MIT"}
+{"instruction": "How do I gita?", "response": "gita ll", "source": "https://raw.githubusercontent.com/tldr-pages/tldr/main/pages/common/gita.md", "license": "MIT"}
+{"instruction": "How do I fdroid?", "response": "fdroid build {{app_id}}", "source": "https://raw.githubusercontent.com/tldr-pages/tldr/main/pages/common/fdroid.md", "license": "MIT"}
+{"instruction": "How do I gradle tasks?", "response": "gradle tasks", "source": "https://raw.githubusercontent.com/tldr-pages/tldr/main/pages/common/gradle-tasks.md", "license": "MIT"}
+{"instruction": "How do I Get-NodeInstallLocation?", "response": "Get-NodeInstallLocation", "source": "https://raw.githubusercontent.com/tldr-pages/tldr/main/pages/common/get-nodeinstalllocation.md", "license": "MIT"}
+{"instruction": "How do I java?", "response": "java {{classname}}", "source": "https://raw.githubusercontent.com/tldr-pages/tldr/main/pages/common/java.md", "license": "MIT"}
+{"instruction": "How do I bfs?", "response": "bfs {{path/to/directory}} -name '{{*.ext}}'", "source": "https://raw.githubusercontent.com/tldr-pages/tldr/main/pages/common/bfs.md", "license": "MIT"}
+{"instruction": "How do I dirs?", "response": "dirs", "source": "https://raw.githubusercontent.com/tldr-pages/tldr/main/pages/common/dirs.md", "license": "MIT"}
+{"instruction": "How do I gnmic?", "response": "gnmic {{[-a|--address]}} {{ip:port}} capabilities", "source": "https://raw.githubusercontent.com/tldr-pages/tldr/main/pages/common/gnmic.md", "license": "MIT"}
+{"instruction": "How do I jira navigate?", "response": "tldr jira open", "source": "https://raw.githubusercontent.com/tldr-pages/tldr/main/pages/common/jira-navigate.md", "license": "MIT"}
+{"instruction": "How do I getprop?", "response": "getprop", "source": "https://raw.githubusercontent.com/tldr-pages/tldr/main/pages/android/getprop.md", "license": "MIT"}
+{"instruction": "How do I chisel?", "response": "chisel server", "source": "https://raw.githubusercontent.com/tldr-pages/tldr/main/pages/common/chisel.md", "license": "MIT"}
+{"instruction": "How do I cargo locate-project?", "response": "cargo locate-project", "source": "https://raw.githubusercontent.com/tldr-pages/tldr/main/pages/common/cargo-locate-project.md", "license": "MIT"}
+{"instruction": "How do I copyq?", "response": "copyq", "source": "https://raw.githubusercontent.com/tldr-pages/tldr/main/pages/common/copyq.md", "license": "MIT"}
+{"instruction": "How do I git count-objects?", "response": "git count-objects", "source": "https://raw.githubusercontent.com/tldr-pages/tldr/main/pages/common/git-count-objects.md", "license": "MIT"}
+{"instruction": "How do I dirname?", "response": "dirname {{path/to/file_or_directory}}", "source": "https://raw.githubusercontent.com/tldr-pages/tldr/main/pages/common/dirname.md", "license": "MIT"}
+{"instruction": "How do I cargo version?", "response": "cargo version", "source": "https://raw.githubusercontent.com/tldr-pages/tldr/main/pages/common/cargo-version.md", "license": "MIT"}
+{"instruction": "How do I checksec?", "response": "checksec file {{path/to/binary}}", "source": "https://raw.githubusercontent.com/tldr-pages/tldr/main/pages/common/checksec.md", "license": "MIT"}
+{"instruction": "How do I gcloud app?", "response": "gcloud app deploy {{deployables}}", "source": "https://raw.githubusercontent.com/tldr-pages/tldr/main/pages/common/gcloud-app.md", "license": "MIT"}
+{"instruction": "How do I bun i?", "response": "tldr bun install", "source": "https://raw.githubusercontent.com/tldr-pages/tldr/main/pages/common/bun-i.md", "license": "MIT"}
+{"instruction": "How do I adb?", "response": "adb start-server", "source": "https://raw.githubusercontent.com/tldr-pages/tldr/main/pages/common/adb.md", "license": "MIT"}
+{"instruction": "How do I calibre-server?", "response": "calibre-server", "source": "https://raw.githubusercontent.com/tldr-pages/tldr/main/pages/common/calibre-server.md", "license": "MIT"}
+{"instruction": "How do I gopass?", "response": "gopass init", "source": "https://raw.githubusercontent.com/tldr-pages/tldr/main/pages/common/gopass.md", "license": "MIT"}
+{"instruction": "How do I git rename-branch?", "response": "git rename-branch {{new_branch_name}}", "source": "https://raw.githubusercontent.com/tldr-pages/tldr/main/pages/common/git-rename-branch.md", "license": "MIT"}
+{"instruction": "How do I hledger-ui?", "response": "hledger-ui", "source": "https://raw.githubusercontent.com/tldr-pages/tldr/main/pages/common/hledger-ui.md", "license": "MIT"}
+{"instruction": "How do I docker swarm?", "response": "docker swarm init", "source": "https://raw.githubusercontent.com/tldr-pages/tldr/main/pages/common/docker-swarm.md", "license": "MIT"}
+{"instruction": "How do I impacket-sniff?", "response": "tldr sniff.py", "source": "https://raw.githubusercontent.com/tldr-pages/tldr/main/pages/common/impacket-sniff.md", "license": "MIT"}
+{"instruction": "How do I hub delete?", "response": "hub delete {{repository}}", "source": "https://raw.githubusercontent.com/tldr-pages/tldr/main/pages/common/hub-delete.md", "license": "MIT"}
+{"instruction": "How do I az container?", "response": "az container create {{[-g|--resource-group]}} {{resource_group}} {{[-n|--name]}} {{name}} --image {{image_name}} {{[-os|--os-type]}} {{windows|linux}} --cpu {{number_of_CPU_cores}} --memory {{memory_in_GB}}", "source": "https://raw.githubusercontent.com/tldr-pages/tldr/main/pages/common/az-container.md", "license": "MIT"}
+{"instruction": "How do I 7z?", "response": "7z a {{path/to/archive.7z}} {{path/to/file_or_directory}}", "source": "https://raw.githubusercontent.com/tldr-pages/tldr/main/pages/common/7z.md", "license": "MIT"}
+{"instruction": "How do I c++?", "response": "tldr g++", "source": "https://raw.githubusercontent.com/tldr-pages/tldr/main/pages/common/c++.md", "license": "MIT"}
+{"instruction": "How do I dog?", "response": "dog {{example.com}}", "source": "https://raw.githubusercontent.com/tldr-pages/tldr/main/pages/common/dog.md", "license": "MIT"}
+{"instruction": "How do I impacket-GetUserSPNs?", "response": "tldr GetUserSPNs.py", "source": "https://raw.githubusercontent.com/tldr-pages/tldr/main/pages/common/impacket-getuserspns.md", "license": "MIT"}
+{"instruction": "How do I apkleaks?", "response": "apkleaks {{[-f|--file]}} {{path/to/file}}.apk", "source": "https://raw.githubusercontent.com/tldr-pages/tldr/main/pages/common/apkleaks.md", "license": "MIT"}
+{"instruction": "How do I git delete-merged-branches?", "response": "git delete-merged-branches", "source": "https://raw.githubusercontent.com/tldr-pages/tldr/main/pages/common/git-delete-merged-branches.md", "license": "MIT"}
+{"instruction": "How do I clang-check?", "response": "clang-check {{path/to/file.cpp}} --", "source": "https://raw.githubusercontent.com/tldr-pages/tldr/main/pages/common/clang-check.md", "license": "MIT"}
+{"instruction": "How do I frida-ps?", "response": "frida-ps", "source": "https://raw.githubusercontent.com/tldr-pages/tldr/main/pages/common/frida-ps.md", "license": "MIT"}
+{"instruction": "How do I hexedit?", "response": "hexedit {{path/to/file}}", "source": "https://raw.githubusercontent.com/tldr-pages/tldr/main/pages/common/hexedit.md", "license": "MIT"}
+{"instruction": "How do I git svn?", "response": "git svn clone {{https://example.com/subversion_repo}} {{local_directory}}", "source": "https://raw.githubusercontent.com/tldr-pages/tldr/main/pages/common/git-svn.md", "license": "MIT"}
+{"instruction": "How do I gst-launch-1.0 audiotestsrc?", "response": "gst-launch-1.0 audiotestsrc ! {{autoaudiosink}}", "source": "https://raw.githubusercontent.com/tldr-pages/tldr/main/pages/common/gst-launch-1.0-audiotestsrc.md", "license": "MIT"}
+{"instruction": "How do I cargo deb?", "response": "cargo deb", "source": "https://raw.githubusercontent.com/tldr-pages/tldr/main/pages/common/cargo-deb.md", "license": "MIT"}
+{"instruction": "How do I gops?", "response": "gops", "source": "https://raw.githubusercontent.com/tldr-pages/tldr/main/pages/common/gops.md", "license": "MIT"}
+{"instruction": "How do I jj config get?", "response": "jj config {{[g|get]}} {{name}}", "source": "https://raw.githubusercontent.com/tldr-pages/tldr/main/pages/common/jj-config-get.md", "license": "MIT"}
+{"instruction": "How do I az storage table?", "response": "az storage table create --account-name {{storage_account_name}} {{[-n|--name]}} {{table_name}} --fail-on-exist", "source": "https://raw.githubusercontent.com/tldr-pages/tldr/main/pages/common/az-storage-table.md", "license": "MIT"}
+{"instruction": "How do I docker network?", "response": "docker network ls", "source": "https://raw.githubusercontent.com/tldr-pages/tldr/main/pages/common/docker-network.md", "license": "MIT"}
+{"instruction": "How do I if?", "response": "if {{condition_command}}; then {{echo \"Condition is true\"}}; fi", "source": "https://raw.githubusercontent.com/tldr-pages/tldr/main/pages/common/if.md", "license": "MIT"}
+{"instruction": "How do I doctl databases firewalls?", "response": "doctl {{[d|databases]}} {{[fw|firewalls]}} {{command}} {{[-t|--access-token]}} {{access_token}}", "source": "https://raw.githubusercontent.com/tldr-pages/tldr/main/pages/common/doctl-databases-firewalls.md", "license": "MIT"}
+{"instruction": "How do I line?", "response": "line vty 0 15", "source": "https://raw.githubusercontent.com/tldr-pages/tldr/main/pages/cisco-ios/line.md", "license": "MIT"}
+{"instruction": "How do I docker compose up?", "response": "docker compose up", "source": "https://raw.githubusercontent.com/tldr-pages/tldr/main/pages/common/docker-compose-up.md", "license": "MIT"}
+{"instruction": "How do I crane export?", "response": "crane export {{image_name}} -", "source": "https://raw.githubusercontent.com/tldr-pages/tldr/main/pages/common/crane-export.md", "license": "MIT"}
+{"instruction": "How do I cheat?", "response": "cheat {{command}}", "source": "https://raw.githubusercontent.com/tldr-pages/tldr/main/pages/common/cheat.md", "license": "MIT"}
+{"instruction": "How do I gnuchess?", "response": "gnuchess", "source": "https://raw.githubusercontent.com/tldr-pages/tldr/main/pages/common/gnuchess.md", "license": "MIT"}
+{"instruction": "How do I gifsicle?", "response": "gifsicle {{path/to/input.gif}} {{[-O|--optimize=]}}3 {{[-o|--output]}} {{path/to/output.gif}}", "source": "https://raw.githubusercontent.com/tldr-pages/tldr/main/pages/common/gifsicle.md", "license": "MIT"}
+{"instruction": "How do I git daemon?", "response": "git daemon --export-all {{path/to/directory1 path/to/directory2 ...}}", "source": "https://raw.githubusercontent.com/tldr-pages/tldr/main/pages/common/git-daemon.md", "license": "MIT"}
+{"instruction": "How do I avrdude?", "response": "avrdude -p {{part_no}} -c {{programmer_id}} -U flash:r:{{file.hex}}:i", "source": "https://raw.githubusercontent.com/tldr-pages/tldr/main/pages/common/avrdude.md", "license": "MIT"}
+{"instruction": "How do I brew search?", "response": "brew search {{keyword}}", "source": "https://raw.githubusercontent.com/tldr-pages/tldr/main/pages/common/brew-search.md", "license": "MIT"}
+{"instruction": "How do I cmark?", "response": "cmark --to html {{filename.md}}", "source": "https://raw.githubusercontent.com/tldr-pages/tldr/main/pages/common/cmark.md", "license": "MIT"}
+{"instruction": "How do I gst-discoverer-1.0?", "response": "gst-discoverer-1.0 {{path/to/file}}", "source": "https://raw.githubusercontent.com/tldr-pages/tldr/main/pages/common/gst-discoverer-1.0.md", "license": "MIT"}
+{"instruction": "How do I ipscan?", "response": "ipscan {{192.168.0.1}}", "source": "https://raw.githubusercontent.com/tldr-pages/tldr/main/pages/common/ipscan.md", "license": "MIT"}
+{"instruction": "How do I glab mr?", "response": "glab mr create", "source": "https://raw.githubusercontent.com/tldr-pages/tldr/main/pages/common/glab-mr.md", "license": "MIT"}
+{"instruction": "How do I az webapp?", "response": "az webapp list-runtimes {{[-os|--os-type]}} {{windows|linux}}", "source": "https://raw.githubusercontent.com/tldr-pages/tldr/main/pages/common/az-webapp.md", "license": "MIT"}
+{"instruction": "How do I finger?", "response": "finger", "source": "https://raw.githubusercontent.com/tldr-pages/tldr/main/pages/common/finger.md", "license": "MIT"}
+{"instruction": "How do I carbonyl?", "response": "carbonyl", "source": "https://raw.githubusercontent.com/tldr-pages/tldr/main/pages/common/carbonyl.md", "license": "MIT"}
+{"instruction": "How do I ilbmtoppm?", "response": "ilbmtoppm {{path/to/file.ilbm}} > {{path/to/file.ppm}}", "source": "https://raw.githubusercontent.com/tldr-pages/tldr/main/pages/common/ilbmtoppm.md", "license": "MIT"}
+{"instruction": "How do I git bulk?", "response": "git bulk --addcurrent {{workspace_name}}", "source": "https://raw.githubusercontent.com/tldr-pages/tldr/main/pages/common/git-bulk.md", "license": "MIT"}
+{"instruction": "How do I cs launch?", "response": "cs launch {{application_name}} -- {{argument1 argument2 ...}}", "source": "https://raw.githubusercontent.com/tldr-pages/tldr/main/pages/common/cs-launch.md", "license": "MIT"}
+{"instruction": "How do I autojump?", "response": "source /usr/share/autojump/autojump.{{bash|fish|zsh}}", "source": "https://raw.githubusercontent.com/tldr-pages/tldr/main/pages/common/autojump.md", "license": "MIT"}
+{"instruction": "How do I bun outdated?", "response": "bun outdated", "source": "https://raw.githubusercontent.com/tldr-pages/tldr/main/pages/common/bun-outdated.md", "license": "MIT"}
+{"instruction": "How do I username?", "response": "username {{admin}} privilege 15 secret {{password}}", "source": "https://raw.githubusercontent.com/tldr-pages/tldr/main/pages/cisco-ios/username.md", "license": "MIT"}
+{"instruction": "How do I dotty?", "response": "dotty {{path/to/graph.gv}}", "source": "https://raw.githubusercontent.com/tldr-pages/tldr/main/pages/common/dotty.md", "license": "MIT"}
+{"instruction": "How do I dtrx?", "response": "dtrx {{path/to/file}}", "source": "https://raw.githubusercontent.com/tldr-pages/tldr/main/pages/common/dtrx.md", "license": "MIT"}
+{"instruction": "How do I csvsort?", "response": "csvsort {{[-c|--columns]}} {{9}} {{data.csv}}", "source": "https://raw.githubusercontent.com/tldr-pages/tldr/main/pages/common/csvsort.md", "license": "MIT"}
+{"instruction": "How do I bye?", "response": "tldr exit", "source": "https://raw.githubusercontent.com/tldr-pages/tldr/main/pages/common/bye.md", "license": "MIT"}
+{"instruction": "How do I git merge-index?", "response": "git merge-index git-merge-one-file -a", "source": "https://raw.githubusercontent.com/tldr-pages/tldr/main/pages/common/git-merge-index.md", "license": "MIT"}
+{"instruction": "How do I gvpack?", "response": "gvpack {{path/to/layout1.gv path/to/layout2.gv ...}} > {{path/to/output.gv}}", "source": "https://raw.githubusercontent.com/tldr-pages/tldr/main/pages/common/gvpack.md", "license": "MIT"}
+{"instruction": "How do I git blame?", "response": "git blame {{path/to/file}}", "source": "https://raw.githubusercontent.com/tldr-pages/tldr/main/pages/common/git-blame.md", "license": "MIT"}
+{"instruction": "How do I composer audit?", "response": "composer audit", "source": "https://raw.githubusercontent.com/tldr-pages/tldr/main/pages/common/composer-audit.md", "license": "MIT"}
+{"instruction": "How do I bunx?", "response": "bunx {{package_name}} \"{{command_argument}}\"", "source": "https://raw.githubusercontent.com/tldr-pages/tldr/main/pages/common/bunx.md", "license": "MIT"}
+{"instruction": "How do I gcloud config set?", "response": "gcloud config set project {{project_id}}", "source": "https://raw.githubusercontent.com/tldr-pages/tldr/main/pages/common/gcloud-config-set.md", "license": "MIT"}
+{"instruction": "How do I aws ses?", "response": "aws ses create-receipt-rule-set --rule-set-name {{rule_set_name}} --generate-cli-skeleton", "source": "https://raw.githubusercontent.com/tldr-pages/tldr/main/pages/common/aws-ses.md", "license": "MIT"}
+{"instruction": "How do I browser-sync?", "response": "browser-sync start --server {{path/to/directory}} --files {{path/to/directory}}", "source": "https://raw.githubusercontent.com/tldr-pages/tldr/main/pages/common/browser-sync.md", "license": "MIT"}
+{"instruction": "How do I hg init?", "response": "hg init", "source": "https://raw.githubusercontent.com/tldr-pages/tldr/main/pages/common/hg-init.md", "license": "MIT"}
+{"instruction": "How do I aws s3 cp?", "response": "aws s3 cp {{path/to/file}} s3://{{bucket_name}}/{{path/to/remote_file}}", "source": "https://raw.githubusercontent.com/tldr-pages/tldr/main/pages/common/aws-s3-cp.md", "license": "MIT"}
+{"instruction": "How do I ghc?", "response": "ghc Main", "source": "https://raw.githubusercontent.com/tldr-pages/tldr/main/pages/common/ghc.md", "license": "MIT"}
+{"instruction": "How do I bun list?", "response": "tldr bun pm ls", "source": "https://raw.githubusercontent.com/tldr-pages/tldr/main/pages/common/bun-list.md", "license": "MIT"}

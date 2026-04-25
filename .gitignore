@@ -1,12 +1,16 @@
 # large or regenerable
-lora_adapter/*.safetensors
-outputs/
+# (adapter weights are 9 MB — small enough to commit; keep them tracked.)
 offload/
 hf_cache/
 cache/
 logs/
 *.ipynb_checkpoints
 *.mp4
+
+# outputs/ is ignored by default; let small training artifacts through
+outputs/*
+!outputs/training_curves.png
+!outputs/training_log.json
 
 # python
 __pycache__/
