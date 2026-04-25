@@ -1,8 +1,28 @@
 # large or regenerable
 lora_adapter/*.safetensors
 outputs/
+offload/
 hf_cache/
+cache/
 logs/
-__pycache__/
 *.ipynb_checkpoints
 *.mp4
+
+# python
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+
+# env / editor
+.env
+.venv/
+venv/
+.idea/
+.vscode/
+.DS_Store

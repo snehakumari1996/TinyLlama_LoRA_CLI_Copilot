@@ -1,18 +1,25 @@
-# ─── Core ────────────────────────────────────────────────────────────────
+# ─── Core ML stack ───────────────────────────────────────────────────────
 transformers>=4.39,<4.42
 peft>=0.10,<0.11
 accelerate>=0.30.1
-
-# ─── PyTorch 2.3 CUDA-11.8 wheels (comment out if already present) ───────
-torch==2.3.0+cu118
-torchvision==0.18.0+cu118
-torchaudio==2.3.0+cu118
---extra-index-url https://download.pytorch.org/whl/cu118
-
-# ─── Helpers ─────────────────────────────────────────────────────────────
-rouge-score
 datasets>=2.19,<2.20
+torch>=2.3.0
 
-# ─── Drive / GCS (optional, silences warning) ────────────────────────────
-fsspec==2024.3.1      
-gcsfs==2024.3.1         
+# ─── Evaluation ──────────────────────────────────────────────────────────
+rouge-score
+
+# ─── Data collection ─────────────────────────────────────────────────────
+requests>=2.31
+beautifulsoup4>=4.12
+tiktoken>=0.5
+tqdm>=4.66
+
+# ─── Filesystem helpers (optional, silences HF warning) ──────────────────
+fsspec>=2024.3,<2025
+gcsfs>=2024.3,<2025
+
+# ─── GPU wheels ──────────────────────────────────────────────────────────
+# For CUDA 11.8 specifically, install torch separately:
+#   pip install torch==2.3.0+cu118 torchvision==0.18.0+cu118 \
+#       --extra-index-url https://download.pytorch.org/whl/cu118
+# CPU/macOS users just need plain `torch>=2.3.0` (already pinned above).
