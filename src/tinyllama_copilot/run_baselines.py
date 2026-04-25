@@ -90,7 +90,7 @@ def _make_local_generator(use_adapter: bool) -> GenerateFn:
 
 # ---------- Hosted API generators ---------------------------------------
 
-def _make_gemini_generator(model: str = "gemini-2.0-flash") -> GenerateFn:
+def _make_gemini_generator(model: str = "gemini-2.5-flash") -> GenerateFn:
     api_key = os.environ.get("GOOGLE_API_KEY") or os.environ.get("GEMINI_API_KEY")
     if not api_key:
         raise RuntimeError("Set GOOGLE_API_KEY (https://aistudio.google.com/app/apikey)")
@@ -189,13 +189,13 @@ def _make_stub_generator() -> GenerateFn:
     return generate
 
 
-MODEL_FACTORIES: dict[str, Callable[[], GenerateFn]] = {
-    "lora": lambda: _make_local_generator(use_adapter=True),
-    "base": lambda: _make_local_generator(use_adapter=False),
-    "gemini": _make_gemini_generator,
-    "anthropic": _make_anthropic_generator,
-    "openai": _make_openai_generator,
-    "stub": _make_stub_generator,
+MODEL_FACTORIES: dict[str, Callable[..., GenerateFn]] = {
+    "lora": lambda **_: _make_local_generator(use_adapter=True),
+    "base": lambda **_: _make_local_generator(use_adapter=False),
+    "gemini": lambda gemini_model="gemini-2.5-flash", **_: _make_gemini_generator(gemini_model),
+    "anthropic": lambda anthropic_model="claude-haiku-4-5-20251001", **_: _make_anthropic_generator(anthropic_model),
+    "openai": lambda openai_model="gpt-4o-mini", **_: _make_openai_generator(openai_model),
+    "stub": lambda **_: _make_stub_generator(),
 }
 
 
@@ -207,11 +207,12 @@ def run_one_model(
     *,
     limit: int = 0,
     sleep_s: float = 0.0,
+    **factory_kwargs,
 ) -> list[dict]:
     """Run *model_name* over *benchmark* and return candidate records."""
     if model_name not in MODEL_FACTORIES:
         raise ValueError(f"Unknown model: {model_name}. Choose from {list(MODEL_FACTORIES)}")
-    generate = MODEL_FACTORIES[model_name]()
+    generate = MODEL_FACTORIES[model_name](**factory_kwargs)
 
     rows = benchmark[:limit] if limit > 0 else benchmark
     iterator = rows
@@ -255,6 +256,21 @@ def _parse_args(argv: Optional[list[str]] = None) -> argparse.Namespace:
         default=0.0,
         help="Sleep seconds between calls (rate-limit hosted APIs; ~4.0 for Gemini free tier)",
     )
+    ap.add_argument(
+        "--gemini-model",
+        default="gemini-2.5-flash",
+        help="Gemini model id (free tier: gemini-2.5-flash, gemini-2.5-flash-lite)",
+    )
+    ap.add_argument(
+        "--anthropic-model",
+        default="claude-haiku-4-5-20251001",
+        help="Anthropic model id",
+    )
+    ap.add_argument(
+        "--openai-model",
+        default="gpt-4o-mini",
+        help="OpenAI model id",
+    )
     return ap.parse_args(argv)
 
 
@@ -275,9 +291,16 @@ def main(argv: Optional[list[str]] = None) -> None:
         if m not in MODEL_FACTORIES:
             raise ValueError(f"Unknown model: {m}. Choose from {list(MODEL_FACTORIES)}")
 
+    factory_kwargs = {
+        "gemini_model": args.gemini_model,
+        "anthropic_model": args.anthropic_model,
+        "openai_model": args.openai_model,
+    }
     for model_name in models:
         logger.info("=== Generating candidates: %s ===", model_name)
-        cands = run_one_model(model_name, benchmark, limit=args.limit, sleep_s=args.sleep)
+        cands = run_one_model(
+            model_name, benchmark, limit=args.limit, sleep_s=args.sleep, **factory_kwargs
+        )
         out_path = out_dir / f"{model_name}.jsonl"
         with out_path.open("w") as f:
             for c in cands:

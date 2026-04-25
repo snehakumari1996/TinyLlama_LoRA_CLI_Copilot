@@ -91,7 +91,7 @@ class JudgeError(Exception):
 class _GeminiJudge:
     name = "gemini"
 
-    def __init__(self, model: str = "gemini-2.0-flash") -> None:
+    def __init__(self, model: str = "gemini-2.5-flash") -> None:
         try:
             from google import genai  # noqa: F401
         except ImportError as e:
