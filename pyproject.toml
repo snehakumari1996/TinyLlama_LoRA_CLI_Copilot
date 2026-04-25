@@ -41,6 +41,13 @@ dev = [
     "mypy>=1.10",
     "pre-commit>=3.7",
 ]
+judge = [
+    # Pick whichever provider you have a key for — the judge module
+    # auto-detects which is installed + keyed.
+    "google-genai>=0.5",
+    "anthropic>=0.34",
+    "openai>=1.40",
+]
 
 [project.scripts]
 tinyllama-cli = "tinyllama_copilot.agent:main"
@@ -50,6 +57,9 @@ tinyllama-split = "tinyllama_copilot.split_data:main"
 tinyllama-eval-static = "tinyllama_copilot.eval_static:main"
 tinyllama-eval-dynamic = "tinyllama_copilot.eval_dynamic:main"
 tinyllama-mean = "tinyllama_copilot.mean_score:main"
+tinyllama-judge = "tinyllama_copilot.judge:main"
+tinyllama-baseline = "tinyllama_copilot.run_baselines:main"
+tinyllama-summary = "tinyllama_copilot.summarize:main"
 
 [project.urls]
 Repository = "https://github.com/snehakumari1996/TinyLlama_LoRA_CLI_Copilot"

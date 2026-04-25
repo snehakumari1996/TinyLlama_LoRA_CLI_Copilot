@@ -95,34 +95,49 @@ Build the data foundation that all eval depends on.
 
 This is the section recruiters care about most.
 
-### C1. Build benchmark test suite (200+ tasks)
-- [ ] Curate 200-300 held-out CLI tasks across categories:
-  - [ ] File operations (find, ls, cp, mv, rm, chmod)
-  - [ ] Git workflows (branch, merge, rebase, stash, log)
-  - [ ] Networking (curl, wget, ssh, scp, netstat)
-  - [ ] Process management (ps, kill, nohup, systemctl)
-  - [ ] Archives (tar, zip, gzip)
-  - [ ] Environment (virtualenv, conda, env vars, PATH)
-  - [ ] Text processing (grep, sed, awk, sort, uniq, cut)
-  - [ ] Containers (docker, kubectl)
-- [ ] Each entry: `{task, reference_command, category, difficulty (1-3)}`
-- [ ] Save as `eval/benchmark.jsonl`
-- [ ] Document benchmark methodology in `eval/README.md`
+### C1. Build benchmark test suite (200+ tasks) ✅ DONE
+- [x] Curate **200** held-out CLI tasks across **10 categories**:
+  - [x] filesystem (30), git (30), shell (30), text (20), container (20)
+  - [x] process (17), networking (16), env (15), archive (12), sysinfo (10)
+- [x] Each entry: `{id, task, reference, category, difficulty}`
+- [x] Difficulty distribution: **52% L1 / 34% L2 / 14% L3**
+- [x] Save as `eval/benchmark.jsonl` (200 rows, schema-validated, unique IDs 1-200)
+- [x] Document methodology in `eval/README.md` (schema, distribution table, held-out guarantee, planned C2/C3 pipeline, limitations)
+- [x] Verify **0 contamination**: `benchmark ∩ {train, val, test} = ∅` under normalized-instruction match
 
-### C2. LLM-as-judge automated grading
-- [ ] Choose judge model (Claude Haiku recommended — fast + cheap)
-- [ ] Write judge prompt for 3 axes: correctness (0-2), safety (0-2), plan quality (0-2)
-- [ ] Force structured JSON output (schema-validated)
-- [ ] Hand-label ~30 examples; compute judge–human agreement (Cohen's kappa)
-- [ ] Document agreement metrics in `eval/judge_calibration.md`
-- [ ] Build `eval/llm_judge.py` runner that takes (model, benchmark) → scores
+### C2. LLM-as-judge automated grading ✅ DONE (calibration deferred)
+- [x] Provider-agnostic judge: Gemini → Anthropic → OpenAI auto-detect
+- [x] Free-tier path: **Gemini 2.0 Flash** as default
+- [x] Stub provider for offline dry-runs (no API key required)
+- [x] Judge prompt covers 3 axes: correctness, safety, plan_quality (each 0-2)
+- [x] Force structured JSON output via `response_mime_type="application/json"` / `response_format={"type":"json_object"}`
+- [x] Tolerant JSON parser (handles markdown fences + stray prose around the object)
+- [x] Bounded retries with exponential backoff
+- [x] Build `tinyllama_copilot/judge.py` + `tinyllama-judge` console script
+- [x] 8 smoke tests pass (parse, end-to-end stub, CLI, error messages)
+- [ ] Hand-label ~30 examples; compute judge–human agreement (Cohen's kappa) — deferred to after first real run
 
-### C3. Baseline comparison sweep
+### C3. Baseline comparison sweep ✅ CODE READY (awaits user-side run)
+- [x] Build `run_baselines.py` orchestrator with 6 backends:
+  - [x] `lora` — local TinyLlama + your LoRA adapter
+  - [x] `base` — local TinyLlama with no adapter
+  - [x] `gemini` — Gemini 2.0 Flash (free tier)
+  - [x] `anthropic` — Claude Haiku (paid, optional)
+  - [x] `openai` — GPT-4o-mini (paid, optional)
+  - [x] `stub` — for offline pipeline tests
+- [x] All backends use the same agent prompt (apples-to-apples)
+- [x] Bounded retries with exponential backoff for hosted APIs
+- [x] `--limit` arg for partial test runs; `--sleep` for free-tier rate limiting
+- [x] Build `summarize.py` aggregator: mean per axis, overall score, per-category breakdown
+- [x] Add `tinyllama-baseline` and `tinyllama-summary` console scripts
+- [x] End-to-end stub-pipeline smoke test passed (baseline → judge → summary)
+- [x] Document end-to-end command sequence in `eval/README.md`
+- [ ] **USER ACTION**: get Gemini key, run sweep, commit `eval/candidates/` + `eval/results/`
 - [ ] Run benchmark against:
-  - [ ] Base TinyLlama-1.1B (no finetune, no prompting)
-  - [ ] Base TinyLlama-1.1B (with few-shot prompt, no finetune)
+  - [ ] Base TinyLlama-1.1B (no finetune)
   - [ ] Your LoRA-tuned TinyLlama
-  - [ ] GPT-4o-mini (via OpenAI API)
+  - [ ] Gemini 2.0 Flash
+  - [ ] (optional) GPT-4o-mini, Claude Haiku
   - [ ] Claude Haiku (via Anthropic API)
   - [ ] Llama-3-8B-Instruct (local or via inference API)
 - [ ] Build `eval/run_baselines.py` that orchestrates the sweep

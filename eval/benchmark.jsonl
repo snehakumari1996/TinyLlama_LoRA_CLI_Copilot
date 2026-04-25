@@ -1,0 +1,200 @@
+{"id": 1, "task": "List all files in the current directory including hidden ones, with details.", "reference": "ls -la", "category": "filesystem", "difficulty": 1}
+{"id": 2, "task": "Find all Python files in the current directory and its subdirectories.", "reference": "find . -type f -name '*.py'", "category": "filesystem", "difficulty": 1}
+{"id": 3, "task": "Recursively delete every .pyc file under the current directory.", "reference": "find . -type f -name '*.pyc' -delete", "category": "filesystem", "difficulty": 2}
+{"id": 4, "task": "Create a directory called logs only if it does not already exist.", "reference": "mkdir -p logs", "category": "filesystem", "difficulty": 1}
+{"id": 5, "task": "Copy report.txt to backup.txt preserving its modification time.", "reference": "cp -p report.txt backup.txt", "category": "filesystem", "difficulty": 1}
+{"id": 6, "task": "Move every .log file in the current directory into a folder called archive.", "reference": "mv *.log archive/", "category": "filesystem", "difficulty": 1}
+{"id": 7, "task": "Print disk usage of each subdirectory in the current folder, sorted largest first, human readable.", "reference": "du -sh */ | sort -hr", "category": "filesystem", "difficulty": 2}
+{"id": 8, "task": "Find every file larger than 100 MB under the home directory.", "reference": "find ~ -type f -size +100M", "category": "filesystem", "difficulty": 2}
+{"id": 9, "task": "Find empty files under the current directory tree.", "reference": "find . -type f -empty", "category": "filesystem", "difficulty": 1}
+{"id": 10, "task": "Show the total size of the current directory in human-readable format.", "reference": "du -sh .", "category": "filesystem", "difficulty": 1}
+{"id": 11, "task": "Make deploy.sh executable for the owner only.", "reference": "chmod u+x deploy.sh", "category": "filesystem", "difficulty": 1}
+{"id": 12, "task": "Recursively change ownership of /var/www to user www-data and group www-data.", "reference": "sudo chown -R www-data:www-data /var/www", "category": "filesystem", "difficulty": 2}
+{"id": 13, "task": "Create a symbolic link called latest pointing to release_v3.", "reference": "ln -s release_v3 latest", "category": "filesystem", "difficulty": 1}
+{"id": 14, "task": "Show the inode number of the file config.yaml.", "reference": "ls -i config.yaml", "category": "filesystem", "difficulty": 2}
+{"id": 15, "task": "List files modified in the last 24 hours under the current directory.", "reference": "find . -type f -mtime -1", "category": "filesystem", "difficulty": 2}
+{"id": 16, "task": "Find files larger than 1 GB that have not been modified in the last 30 days.", "reference": "find / -type f -size +1G -mtime +30", "category": "filesystem", "difficulty": 3}
+{"id": 17, "task": "Print the absolute path of the current working directory.", "reference": "pwd", "category": "filesystem", "difficulty": 1}
+{"id": 18, "task": "Show the first 20 lines of access.log.", "reference": "head -n 20 access.log", "category": "filesystem", "difficulty": 1}
+{"id": 19, "task": "Tail error.log and follow new lines as they are appended.", "reference": "tail -f error.log", "category": "filesystem", "difficulty": 1}
+{"id": 20, "task": "Count the number of regular files in the current directory (non-recursive).", "reference": "ls -1 | wc -l", "category": "filesystem", "difficulty": 2}
+{"id": 21, "task": "Recursively chmod all regular files under src to 644.", "reference": "find src -type f -exec chmod 644 {} +", "category": "filesystem", "difficulty": 3}
+{"id": 22, "task": "Recursively chmod all directories under src to 755.", "reference": "find src -type d -exec chmod 755 {} +", "category": "filesystem", "difficulty": 3}
+{"id": 23, "task": "Find files whose name contains TODO, case-insensitive.", "reference": "find . -type f -iname '*TODO*'", "category": "filesystem", "difficulty": 2}
+{"id": 24, "task": "Print the 10 largest files under /var/log.", "reference": "find /var/log -type f -exec du -h {} + | sort -hr | head -n 10", "category": "filesystem", "difficulty": 3}
+{"id": 25, "task": "Show free disk space on every mounted filesystem in human-readable form.", "reference": "df -h", "category": "filesystem", "difficulty": 1}
+{"id": 26, "task": "Update the modification time of file.txt without changing its content.", "reference": "touch file.txt", "category": "filesystem", "difficulty": 1}
+{"id": 27, "task": "Remove an empty directory called build.", "reference": "rmdir build", "category": "filesystem", "difficulty": 1}
+{"id": 28, "task": "Recursively delete the directory node_modules and everything inside it.", "reference": "rm -rf node_modules", "category": "filesystem", "difficulty": 1}
+{"id": 29, "task": "Print the contents of file.txt with line numbers.", "reference": "cat -n file.txt", "category": "filesystem", "difficulty": 1}
+{"id": 30, "task": "Compare two text files line by line and only show the differences.", "reference": "diff a.txt b.txt", "category": "filesystem", "difficulty": 1}
+{"id": 31, "task": "Initialize a new git repository in the current directory.", "reference": "git init", "category": "git", "difficulty": 1}
+{"id": 32, "task": "Stage every modified and new file in the working tree for commit.", "reference": "git add -A", "category": "git", "difficulty": 1}
+{"id": 33, "task": "Show the working tree status in short format.", "reference": "git status -s", "category": "git", "difficulty": 1}
+{"id": 34, "task": "Create a new branch named feature/login and switch to it.", "reference": "git checkout -b feature/login", "category": "git", "difficulty": 1}
+{"id": 35, "task": "Switch to the main branch.", "reference": "git checkout main", "category": "git", "difficulty": 1}
+{"id": 36, "task": "Commit all staged changes with the message Initial commit.", "reference": "git commit -m 'Initial commit'", "category": "git", "difficulty": 1}
+{"id": 37, "task": "Show the last 5 commits as a one-line summary.", "reference": "git log --oneline -5", "category": "git", "difficulty": 2}
+{"id": 38, "task": "Show staged changes that will be included in the next commit.", "reference": "git diff --cached", "category": "git", "difficulty": 2}
+{"id": 39, "task": "Show unstaged changes only.", "reference": "git diff", "category": "git", "difficulty": 1}
+{"id": 40, "task": "Stash uncommitted changes including untracked files.", "reference": "git stash -u", "category": "git", "difficulty": 2}
+{"id": 41, "task": "Apply the most recent stash and remove it from the stash list.", "reference": "git stash pop", "category": "git", "difficulty": 2}
+{"id": 42, "task": "Show all local and remote branches.", "reference": "git branch -a", "category": "git", "difficulty": 1}
+{"id": 43, "task": "Delete the local branch feature/old-login.", "reference": "git branch -d feature/old-login", "category": "git", "difficulty": 1}
+{"id": 44, "task": "Force-delete a local branch that has unmerged work.", "reference": "git branch -D feature/abandoned", "category": "git", "difficulty": 2}
+{"id": 45, "task": "Pull the latest changes from origin main with rebase rather than merge.", "reference": "git pull --rebase origin main", "category": "git", "difficulty": 2}
+{"id": 46, "task": "Push the current branch and set upstream to the same name on origin.", "reference": "git push -u origin HEAD", "category": "git", "difficulty": 2}
+{"id": 47, "task": "Show the commit that introduced a particular line in src/app.py.", "reference": "git blame src/app.py", "category": "git", "difficulty": 2}
+{"id": 48, "task": "Add origin remote pointing to git@github.com:foo/bar.git.", "reference": "git remote add origin git@github.com:foo/bar.git", "category": "git", "difficulty": 2}
+{"id": 49, "task": "Show all configured remotes with URLs.", "reference": "git remote -v", "category": "git", "difficulty": 1}
+{"id": 50, "task": "Create an annotated tag v1.0.0 with message Release 1.0.", "reference": "git tag -a v1.0.0 -m 'Release 1.0'", "category": "git", "difficulty": 2}
+{"id": 51, "task": "Push every local tag to origin.", "reference": "git push origin --tags", "category": "git", "difficulty": 2}
+{"id": 52, "task": "Squash the last 3 commits interactively.", "reference": "git rebase -i HEAD~3", "category": "git", "difficulty": 3}
+{"id": 53, "task": "Discard local changes to a tracked file called config.yml.", "reference": "git checkout -- config.yml", "category": "git", "difficulty": 2}
+{"id": 54, "task": "Hard-reset the working tree to match origin/main exactly.", "reference": "git fetch origin && git reset --hard origin/main", "category": "git", "difficulty": 3}
+{"id": 55, "task": "Cherry-pick commit abc1234 onto the current branch.", "reference": "git cherry-pick abc1234", "category": "git", "difficulty": 2}
+{"id": 56, "task": "Show the file changes introduced by commit abc1234.", "reference": "git show abc1234", "category": "git", "difficulty": 2}
+{"id": 57, "task": "Search the entire repository history for any commit that mentions 'login bug' in its message.", "reference": "git log --all --grep='login bug'", "category": "git", "difficulty": 3}
+{"id": 58, "task": "Find the commit that first introduced the string 'TODO: deprecate' anywhere in the codebase.", "reference": "git log -S 'TODO: deprecate'", "category": "git", "difficulty": 3}
+{"id": 59, "task": "Clone the repo at https://github.com/foo/bar shallowly with depth 1.", "reference": "git clone --depth 1 https://github.com/foo/bar", "category": "git", "difficulty": 2}
+{"id": 60, "task": "Show what would be removed by git clean without actually removing anything.", "reference": "git clean -nd", "category": "git", "difficulty": 2}
+{"id": 61, "task": "Compress the directory reports into reports.tar.gz.", "reference": "tar -czf reports.tar.gz reports", "category": "archive", "difficulty": 1}
+{"id": 62, "task": "Extract reports.tar.gz into the current directory.", "reference": "tar -xzf reports.tar.gz", "category": "archive", "difficulty": 1}
+{"id": 63, "task": "List the contents of archive.tar without extracting.", "reference": "tar -tf archive.tar", "category": "archive", "difficulty": 1}
+{"id": 64, "task": "Compress notes.txt to notes.txt.gz, removing the original.", "reference": "gzip notes.txt", "category": "archive", "difficulty": 1}
+{"id": 65, "task": "Decompress notes.txt.gz back to notes.txt.", "reference": "gunzip notes.txt.gz", "category": "archive", "difficulty": 1}
+{"id": 66, "task": "Create a zip archive named project.zip from the project directory.", "reference": "zip -r project.zip project", "category": "archive", "difficulty": 1}
+{"id": 67, "task": "Extract project.zip into the current directory.", "reference": "unzip project.zip", "category": "archive", "difficulty": 1}
+{"id": 68, "task": "Create a tarball of /var/log excluding files older than 90 days.", "reference": "find /var/log -type f -mtime -90 | tar -czf logs.tar.gz -T -", "category": "archive", "difficulty": 3}
+{"id": 69, "task": "Tar a directory called src and split the output into 100MB chunks named src.tar.gz.part-aa, ab, etc.", "reference": "tar -czf - src | split -b 100M - src.tar.gz.part-", "category": "archive", "difficulty": 3}
+{"id": 70, "task": "Compress backup.tar with bzip2 to backup.tar.bz2.", "reference": "bzip2 backup.tar", "category": "archive", "difficulty": 1}
+{"id": 71, "task": "Decompress backup.tar.bz2 in place.", "reference": "bunzip2 backup.tar.bz2", "category": "archive", "difficulty": 1}
+{"id": 72, "task": "Use xz to compress big.log into big.log.xz with maximum compression.", "reference": "xz -9 big.log", "category": "archive", "difficulty": 2}
+{"id": 73, "task": "Download https://example.com/file.zip and save it as data.zip.", "reference": "curl -o data.zip https://example.com/file.zip", "category": "networking", "difficulty": 1}
+{"id": 74, "task": "Download a file with wget, resuming a partial download.", "reference": "wget -c https://example.com/big.iso", "category": "networking", "difficulty": 2}
+{"id": 75, "task": "Send a JSON POST request to https://api.example.com/v1/items with body {\"name\":\"x\"}.", "reference": "curl -X POST -H 'Content-Type: application/json' -d '{\"name\":\"x\"}' https://api.example.com/v1/items", "category": "networking", "difficulty": 2}
+{"id": 76, "task": "Print only the HTTP status code for a GET request to https://example.com.", "reference": "curl -o /dev/null -s -w '%{http_code}\\n' https://example.com", "category": "networking", "difficulty": 3}
+{"id": 77, "task": "SSH into user@host on port 2222.", "reference": "ssh -p 2222 user@host", "category": "networking", "difficulty": 1}
+{"id": 78, "task": "Copy the local file build.tar.gz to /opt/releases on remote host server.example.com.", "reference": "scp build.tar.gz user@server.example.com:/opt/releases/", "category": "networking", "difficulty": 1}
+{"id": 79, "task": "Sync local directory site/ to user@host:/var/www/site preserving permissions, deleting extras, over SSH.", "reference": "rsync -avz --delete -e ssh site/ user@host:/var/www/site/", "category": "networking", "difficulty": 3}
+{"id": 80, "task": "List the listening TCP ports and the processes that own them.", "reference": "sudo ss -tlnp", "category": "networking", "difficulty": 2}
+{"id": 81, "task": "Show the routing table.", "reference": "ip route", "category": "networking", "difficulty": 2}
+{"id": 82, "task": "Look up the A record for example.com using dig in short form.", "reference": "dig +short example.com", "category": "networking", "difficulty": 2}
+{"id": 83, "task": "Resolve the hostname google.com using nslookup.", "reference": "nslookup google.com", "category": "networking", "difficulty": 1}
+{"id": 84, "task": "Send 4 ICMP echo requests to 8.8.8.8 and stop.", "reference": "ping -c 4 8.8.8.8", "category": "networking", "difficulty": 1}
+{"id": 85, "task": "Show the IPv4 addresses of all network interfaces.", "reference": "ip -4 addr", "category": "networking", "difficulty": 2}
+{"id": 86, "task": "Forward local port 8080 to remote host's port 80 over SSH.", "reference": "ssh -L 8080:localhost:80 user@host", "category": "networking", "difficulty": 3}
+{"id": 87, "task": "Generate a 4096-bit RSA SSH key without a passphrase, saved to ~/.ssh/id_rsa_demo.", "reference": "ssh-keygen -t rsa -b 4096 -N '' -f ~/.ssh/id_rsa_demo", "category": "networking", "difficulty": 3}
+{"id": 88, "task": "List active TCP connections in the established state.", "reference": "ss -t state established", "category": "networking", "difficulty": 2}
+{"id": 89, "task": "Show all running processes for the current user.", "reference": "ps -u $USER", "category": "process", "difficulty": 1}
+{"id": 90, "task": "Show the top 10 processes by memory usage.", "reference": "ps aux --sort=-%mem | head -n 11", "category": "process", "difficulty": 2}
+{"id": 91, "task": "Show the top 10 processes by CPU usage.", "reference": "ps aux --sort=-%cpu | head -n 11", "category": "process", "difficulty": 2}
+{"id": 92, "task": "Find the PID of every process named nginx.", "reference": "pgrep -x nginx", "category": "process", "difficulty": 1}
+{"id": 93, "task": "Kill every process whose name matches python old_script.py.", "reference": "pkill -f 'python old_script.py'", "category": "process", "difficulty": 2}
+{"id": 94, "task": "Send SIGTERM to PID 1234.", "reference": "kill 1234", "category": "process", "difficulty": 1}
+{"id": 95, "task": "Forcefully kill PID 1234.", "reference": "kill -9 1234", "category": "process", "difficulty": 1}
+{"id": 96, "task": "Run the long_job.sh script in the background, immune to logout.", "reference": "nohup ./long_job.sh &", "category": "process", "difficulty": 2}
+{"id": 97, "task": "Show real-time process activity (top equivalent) and exit after one update.", "reference": "top -b -n 1", "category": "process", "difficulty": 2}
+{"id": 98, "task": "List jobs running in the current shell.", "reference": "jobs", "category": "process", "difficulty": 1}
+{"id": 99, "task": "Bring background job number 1 to the foreground.", "reference": "fg %1", "category": "process", "difficulty": 1}
+{"id": 100, "task": "Show files opened by PID 1234.", "reference": "lsof -p 1234", "category": "process", "difficulty": 2}
+{"id": 101, "task": "Show which process is listening on TCP port 8080.", "reference": "lsof -i :8080", "category": "process", "difficulty": 2}
+{"id": 102, "task": "Restart the nginx service via systemd.", "reference": "sudo systemctl restart nginx", "category": "process", "difficulty": 1}
+{"id": 103, "task": "Show the systemd unit status for postgresql.", "reference": "systemctl status postgresql", "category": "process", "difficulty": 1}
+{"id": 104, "task": "Enable docker to start at boot.", "reference": "sudo systemctl enable docker", "category": "process", "difficulty": 2}
+{"id": 105, "task": "Tail the systemd journal for the ssh service.", "reference": "journalctl -u ssh -f", "category": "process", "difficulty": 2}
+{"id": 106, "task": "Create a Python virtual environment in a folder called venv.", "reference": "python -m venv venv", "category": "env", "difficulty": 1}
+{"id": 107, "task": "Activate the virtual environment located at ./venv (bash).", "reference": "source ./venv/bin/activate", "category": "env", "difficulty": 1}
+{"id": 108, "task": "Deactivate the currently active virtual environment.", "reference": "deactivate", "category": "env", "difficulty": 1}
+{"id": 109, "task": "Install the package requests version 2.31.0 with pip.", "reference": "pip install 'requests==2.31.0'", "category": "env", "difficulty": 1}
+{"id": 110, "task": "Freeze installed pip packages into requirements.txt.", "reference": "pip freeze > requirements.txt", "category": "env", "difficulty": 1}
+{"id": 111, "task": "Install all packages listed in requirements.txt.", "reference": "pip install -r requirements.txt", "category": "env", "difficulty": 1}
+{"id": 112, "task": "Show the version of pip currently in use.", "reference": "pip --version", "category": "env", "difficulty": 1}
+{"id": 113, "task": "Create a conda environment called ml with Python 3.11.", "reference": "conda create -n ml python=3.11 -y", "category": "env", "difficulty": 2}
+{"id": 114, "task": "Activate the conda environment ml.", "reference": "conda activate ml", "category": "env", "difficulty": 1}
+{"id": 115, "task": "Print all environment variables, sorted alphabetically.", "reference": "env | sort", "category": "env", "difficulty": 1}
+{"id": 116, "task": "Set the environment variable LOG_LEVEL to DEBUG for the current shell.", "reference": "export LOG_LEVEL=DEBUG", "category": "env", "difficulty": 1}
+{"id": 117, "task": "Print the value of the PATH environment variable.", "reference": "echo $PATH", "category": "env", "difficulty": 1}
+{"id": 118, "task": "Append /opt/myapp/bin to PATH for this shell session.", "reference": "export PATH=$PATH:/opt/myapp/bin", "category": "env", "difficulty": 1}
+{"id": 119, "task": "Define an alias 'll' for 'ls -la' in the current shell.", "reference": "alias ll='ls -la'", "category": "env", "difficulty": 1}
+{"id": 120, "task": "Re-source ~/.bashrc to pick up changes.", "reference": "source ~/.bashrc", "category": "env", "difficulty": 1}
+{"id": 121, "task": "Search every file in src/ for the literal string 'TODO', case-insensitive.", "reference": "grep -ri 'TODO' src", "category": "text", "difficulty": 1}
+{"id": 122, "task": "Search recursively for lines matching the regex 'def [a-z_]+' under src/, printing the file and line number.", "reference": "grep -rEn 'def [a-z_]+' src", "category": "text", "difficulty": 2}
+{"id": 123, "task": "Print only the unique lines from sorted.txt.", "reference": "uniq sorted.txt", "category": "text", "difficulty": 1}
+{"id": 124, "task": "Sort lines.txt numerically and remove duplicates.", "reference": "sort -n lines.txt | uniq", "category": "text", "difficulty": 2}
+{"id": 125, "task": "Count the number of lines in file.txt.", "reference": "wc -l file.txt", "category": "text", "difficulty": 1}
+{"id": 126, "task": "Replace every occurrence of foo with bar in config.txt and write the result back in place.", "reference": "sed -i 's/foo/bar/g' config.txt", "category": "text", "difficulty": 2}
+{"id": 127, "task": "Print only the second column of a CSV file separated by commas.", "reference": "awk -F, '{print $2}' file.csv", "category": "text", "difficulty": 2}
+{"id": 128, "task": "Print the sum of column 3 from data.tsv.", "reference": "awk -F'\\t' '{sum+=$3} END {print sum}' data.tsv", "category": "text", "difficulty": 3}
+{"id": 129, "task": "Print only the first column of /etc/passwd (the usernames).", "reference": "cut -d: -f1 /etc/passwd", "category": "text", "difficulty": 2}
+{"id": 130, "task": "Convert all lowercase letters in file.txt to uppercase and print the result.", "reference": "tr 'a-z' 'A-Z' < file.txt", "category": "text", "difficulty": 2}
+{"id": 131, "task": "Show only the lines in file.txt that contain a four-digit number.", "reference": "grep -E '[0-9]{4}' file.txt", "category": "text", "difficulty": 2}
+{"id": 132, "task": "Show lines 100 through 200 of large.log.", "reference": "sed -n '100,200p' large.log", "category": "text", "difficulty": 3}
+{"id": 133, "task": "Print the 10 most frequent words across every .txt file in the current directory.", "reference": "cat *.txt | tr -s '[:space:]' '\\n' | sort | uniq -c | sort -rn | head -n 10", "category": "text", "difficulty": 3}
+{"id": 134, "task": "Pretty-print response.json using jq.", "reference": "jq . response.json", "category": "text", "difficulty": 1}
+{"id": 135, "task": "Extract the .name field from every object in items.json.", "reference": "jq '.[].name' items.json", "category": "text", "difficulty": 2}
+{"id": 136, "task": "Filter only objects from items.json where .active is true.", "reference": "jq '.[] | select(.active == true)' items.json", "category": "text", "difficulty": 3}
+{"id": 137, "task": "Use xargs to run rm on every empty file under the current directory.", "reference": "find . -type f -empty -print0 | xargs -0 rm", "category": "text", "difficulty": 3}
+{"id": 138, "task": "Show how many times the word ERROR appears in app.log.", "reference": "grep -c 'ERROR' app.log", "category": "text", "difficulty": 1}
+{"id": 139, "task": "Print only the file names that contain the string 'panic' under src/.", "reference": "grep -rl 'panic' src", "category": "text", "difficulty": 2}
+{"id": 140, "task": "Replace tabs with 4 spaces in script.py and overwrite the file.", "reference": "expand -t 4 script.py | sponge script.py", "category": "text", "difficulty": 3}
+{"id": 141, "task": "List all running docker containers, showing only their IDs and names.", "reference": "docker ps --format '{{.ID}} {{.Names}}'", "category": "container", "difficulty": 2}
+{"id": 142, "task": "List all docker containers including stopped ones.", "reference": "docker ps -a", "category": "container", "difficulty": 1}
+{"id": 143, "task": "Pull the nginx image with tag latest from Docker Hub.", "reference": "docker pull nginx:latest", "category": "container", "difficulty": 1}
+{"id": 144, "task": "Run an nginx container in the background mapping host port 8080 to container port 80, named web.", "reference": "docker run -d --name web -p 8080:80 nginx:latest", "category": "container", "difficulty": 2}
+{"id": 145, "task": "Stop the running container named web.", "reference": "docker stop web", "category": "container", "difficulty": 1}
+{"id": 146, "task": "Remove the container named web (must be stopped).", "reference": "docker rm web", "category": "container", "difficulty": 1}
+{"id": 147, "task": "Remove the docker image nginx:latest.", "reference": "docker rmi nginx:latest", "category": "container", "difficulty": 1}
+{"id": 148, "task": "Build a docker image from the Dockerfile in the current directory, tagged myapp:dev.", "reference": "docker build -t myapp:dev .", "category": "container", "difficulty": 1}
+{"id": 149, "task": "Tail the logs of container web, following new output.", "reference": "docker logs -f web", "category": "container", "difficulty": 1}
+{"id": 150, "task": "Open an interactive bash shell inside the running container web.", "reference": "docker exec -it web bash", "category": "container", "difficulty": 1}
+{"id": 151, "task": "Show resource usage for all running containers.", "reference": "docker stats --no-stream", "category": "container", "difficulty": 2}
+{"id": 152, "task": "Remove all stopped containers, dangling images and unused networks.", "reference": "docker system prune -f", "category": "container", "difficulty": 2}
+{"id": 153, "task": "Bring up the docker-compose stack defined in docker-compose.yml in detached mode.", "reference": "docker compose up -d", "category": "container", "difficulty": 1}
+{"id": 154, "task": "Tear down the docker-compose stack and remove its volumes.", "reference": "docker compose down -v", "category": "container", "difficulty": 2}
+{"id": 155, "task": "List all kubernetes pods in the current namespace.", "reference": "kubectl get pods", "category": "container", "difficulty": 1}
+{"id": 156, "task": "Show pods across every namespace, with their node and IP.", "reference": "kubectl get pods -A -o wide", "category": "container", "difficulty": 2}
+{"id": 157, "task": "Apply the manifest deployment.yaml to the cluster.", "reference": "kubectl apply -f deployment.yaml", "category": "container", "difficulty": 1}
+{"id": 158, "task": "Delete a kubernetes deployment named api in the prod namespace.", "reference": "kubectl delete deployment api -n prod", "category": "container", "difficulty": 2}
+{"id": 159, "task": "Tail the logs of pod web-7cf9 in the default namespace.", "reference": "kubectl logs -f web-7cf9", "category": "container", "difficulty": 1}
+{"id": 160, "task": "Open a shell inside a running pod called web-7cf9.", "reference": "kubectl exec -it web-7cf9 -- bash", "category": "container", "difficulty": 2}
+{"id": 161, "task": "Show kernel name and version.", "reference": "uname -a", "category": "sysinfo", "difficulty": 1}
+{"id": 162, "task": "Show how long the system has been running.", "reference": "uptime", "category": "sysinfo", "difficulty": 1}
+{"id": 163, "task": "Show free and used memory in human readable form.", "reference": "free -h", "category": "sysinfo", "difficulty": 1}
+{"id": 164, "task": "Show CPU information including number of cores.", "reference": "lscpu", "category": "sysinfo", "difficulty": 1}
+{"id": 165, "task": "Show the system hostname.", "reference": "hostname", "category": "sysinfo", "difficulty": 1}
+{"id": 166, "task": "Show the OS release name and version (Linux).", "reference": "cat /etc/os-release", "category": "sysinfo", "difficulty": 2}
+{"id": 167, "task": "Show the currently logged-in users.", "reference": "who", "category": "sysinfo", "difficulty": 1}
+{"id": 168, "task": "Show the date and time in ISO 8601 format, UTC.", "reference": "date -u +'%Y-%m-%dT%H:%M:%SZ'", "category": "sysinfo", "difficulty": 2}
+{"id": 169, "task": "Show the most recent shutdown / reboot history.", "reference": "last -x shutdown reboot | head", "category": "sysinfo", "difficulty": 3}
+{"id": 170, "task": "Show the current effective user ID and groups.", "reference": "id", "category": "sysinfo", "difficulty": 1}
+{"id": 171, "task": "Print the last 50 commands from shell history.", "reference": "history 50", "category": "shell", "difficulty": 1}
+{"id": 172, "task": "Repeat the previous shell command verbatim.", "reference": "!!", "category": "shell", "difficulty": 1}
+{"id": 173, "task": "Print the exit status of the previously run command.", "reference": "echo $?", "category": "shell", "difficulty": 1}
+{"id": 174, "task": "Sleep for 5 seconds.", "reference": "sleep 5", "category": "shell", "difficulty": 1}
+{"id": 175, "task": "Run two commands sequentially only if the first one succeeds.", "reference": "make test && make build", "category": "shell", "difficulty": 1}
+{"id": 176, "task": "Run a fallback command only if the first one fails.", "reference": "make test || echo 'tests failed'", "category": "shell", "difficulty": 1}
+{"id": 177, "task": "Redirect stderr of run.sh to errors.log while letting stdout flow normally.", "reference": "./run.sh 2> errors.log", "category": "shell", "difficulty": 2}
+{"id": 178, "task": "Redirect both stdout and stderr of run.sh to combined.log.", "reference": "./run.sh > combined.log 2>&1", "category": "shell", "difficulty": 2}
+{"id": 179, "task": "Pipe the output of ls -1 into wc -l.", "reference": "ls -1 | wc -l", "category": "shell", "difficulty": 1}
+{"id": 180, "task": "Run a command in a subshell so it doesn't affect the current directory.", "reference": "(cd build && make)", "category": "shell", "difficulty": 2}
+{"id": 181, "task": "Capture the output of date into a variable named TODAY.", "reference": "TODAY=$(date)", "category": "shell", "difficulty": 1}
+{"id": 182, "task": "Loop through every .csv file in the current directory and print its name.", "reference": "for f in *.csv; do echo \"$f\"; done", "category": "shell", "difficulty": 2}
+{"id": 183, "task": "Schedule the script /opt/backup.sh to run every day at 2:30 AM via cron.", "reference": "30 2 * * * /opt/backup.sh", "category": "shell", "difficulty": 3}
+{"id": 184, "task": "Edit the current user's crontab.", "reference": "crontab -e", "category": "shell", "difficulty": 1}
+{"id": 185, "task": "Show the current user's scheduled cron jobs.", "reference": "crontab -l", "category": "shell", "difficulty": 1}
+{"id": 186, "task": "Print 'hello' to the terminal without a trailing newline.", "reference": "printf 'hello'", "category": "shell", "difficulty": 1}
+{"id": 187, "task": "Run command1 only on the lines of file.txt that match the regex '^ERROR'.", "reference": "grep '^ERROR' file.txt | xargs -I {} command1 {}", "category": "shell", "difficulty": 3}
+{"id": 188, "task": "Tail the systemd journal for the last 100 lines without following.", "reference": "journalctl -n 100", "category": "shell", "difficulty": 2}
+{"id": 189, "task": "Display the man page for grep.", "reference": "man grep", "category": "shell", "difficulty": 1}
+{"id": 190, "task": "Print only the first matching line from a recursive grep for 'apiKey' under src/.", "reference": "grep -r --max-count=1 'apiKey' src", "category": "shell", "difficulty": 3}
+{"id": 191, "task": "Find the absolute path of the python3 binary in PATH.", "reference": "which python3", "category": "shell", "difficulty": 1}
+{"id": 192, "task": "Show what type of command 'ls' is (alias, builtin, or executable).", "reference": "type ls", "category": "shell", "difficulty": 2}
+{"id": 193, "task": "Print the bash version installed on the system.", "reference": "bash --version", "category": "shell", "difficulty": 1}
+{"id": 194, "task": "Read user input into a variable called name.", "reference": "read -p 'Name: ' name", "category": "shell", "difficulty": 2}
+{"id": 195, "task": "Run a command with sudo without being prompted for the password (assume NOPASSWD is configured).", "reference": "sudo -n systemctl restart nginx", "category": "shell", "difficulty": 3}
+{"id": 196, "task": "Generate a random 16-character alphanumeric string.", "reference": "tr -dc 'A-Za-z0-9' </dev/urandom | head -c 16", "category": "shell", "difficulty": 3}
+{"id": 197, "task": "Compute the sha256 checksum of release.tar.gz.", "reference": "sha256sum release.tar.gz", "category": "shell", "difficulty": 1}
+{"id": 198, "task": "Compute the md5 checksum of every file under dist and write it to checksums.md5.", "reference": "find dist -type f -exec md5sum {} + > checksums.md5", "category": "shell", "difficulty": 3}
+{"id": 199, "task": "Encode the file image.png as base64 and write to image.b64.", "reference": "base64 image.png > image.b64", "category": "shell", "difficulty": 2}
+{"id": 200, "task": "Time how long ./build.sh takes to run.", "reference": "time ./build.sh", "category": "shell", "difficulty": 1}
